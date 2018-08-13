@@ -1,0 +1,150 @@
+<html>
+  <head>
+    <!-- Main content to SEO -->
+
+  <title>API Reference - Discord Fork Developer Portal</title>
+
+
+<meta property="og:title" content="API Reference" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+<meta property="og:description" content="Information on available API interfaces to connect to the Fork list. - discordbots.co.uk" />
+<meta name="description" content="Information on available API interfaces to connect to the Fork list. - discordbots.co.uk" />
+
+
+<meta property="og:image" content="https://discordbots.co.uk/assets/images/logo.png" />
+<link rel="icon" type="image/x-icon" href="https://discordbots.co.uk/assets/images/logo.png">
+
+
+<meta name="revisit-after" content="2 days">
+<meta name="keywords" content="discord, bots, botlist">
+<meta name="theme-color" content="#3498db">
+
+<!-- Style and JS stuff -->
+<link rel="stylesheet" href="https://discordbots.co.uk/assets/css/custom.css">
+<script src="/assets/js/bundle.js" type="text/javascript" charset="utf-8"></script>
+<script>
+  delete localStorage;
+</script>
+
+  </head>
+  <body data-ls-type="docs">
+    <div class="nav-container">
+      <span id="menu-icon"></span>
+    
+      <div class="nav-content">
+        <h4 class="center">
+          <a href="/docs">
+            Discord Fork Developer Portal
+          </a>
+        </h4>
+      </div>
+    
+      <div id="navside" class="sidenav" style="transform: translateX(-250px);">
+        <a href="/">Back to Forklist</a>
+        <a href="/docs/">Docs Homepage</a>
+      </div>
+    </div>
+    <section class="container">
+      <h1 id="api-reference">API Reference</h1>
+<p>Discord Fork is built on top of GitHub using GitHub pages and Jekyll, which means it is limited by GET requests only.
+Please interface with the GitHub API in order to automate actions with the bot list.</p>
+
+<p>GET <code class="highlighter-rouge">/api/bots/all.json</code><br />
+Obtain information on all bots.
+Some keys may be missing, such as the <code class="highlighter-rouge">github</code> key.</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"195244363339530240"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"client_id"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"195244363339530240"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"application_id"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"195244341038546948"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"name"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"KawaiiBot"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"prefix"</span><span class="p">:</span><span class="w"> </span><span class="s2">"+"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"description"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"A kawaii Discord bot that makes your server more fun!"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"long_description"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"url_safe"</span><span class="p">:</span><span class="w"> </span><span class="s2">"kawaiibot"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"avatar"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"https://cdn.discordapp.com/avatars/195244363339530240/ec4594ead877809a2a53bade17f3cc94.png"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"link"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"https://discordapp.com/oauth2/authorize?client_id=195244341038546948&amp;scope=bot"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"support"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"github"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> 
+      </span><span class="s2">"owner"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"KawaiiBot"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"repo"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"KawaiiBot"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"verified"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"nsfw"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>GET <code class="highlighter-rouge">/api/servers/all.json</code><br />
+Obtain information on all servers.
+Some keys may be missing, such as the <code class="highlighter-rouge">github</code> key.</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"330777295952543744"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"server_id"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"330777295952543744"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"name"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"Terminal"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"description"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"The server of Terminal.ink"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"long_description"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"The server of Terminal.ink"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"url_safe"</span><span class="p">:</span><span class="w"> </span><span class="s2">"terminal"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"avatar"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"https://terminal.ink/assets/images/avatar.png"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"link"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"https://discord.gg/8uC6aKZ"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"github"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> 
+    </span><span class="s2">"owner"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"terminal"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"verified"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"nsfw"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+    </section>
+    <div class="box-container primary-flat no-border-radius no-margin">
+  <div class="center">
+    <a class="btn white" href="https://github.com/Terminal/Discord_Fork/blob/master/_docs/api-reference.md">
+      <img class="github-logo" src="/assets/images/GitHub-Mark-32px.png">
+      <span class="black-text bold">View this page on GitHub</span>
+    </a>
+    
+      
+        <a class="btn white" href="/">
+          <span class="black-text bold">Bots</span>
+        </a>
+      
+    
+      
+        <a class="btn white" href="/servers">
+          <span class="black-text bold">Servers</span>
+        </a>
+      
+    
+      
+    
+      
+        <a class="btn white" href="/docs">
+          <span class="black-text bold">Documentation</span>
+        </a>
+      
+    
+    <hr>
+    <p>Copyright 2017 - 2018, Terminal.ink<br> Original concept by AlexFlipnote<br> GitHub® is a trademark of GitHub, Inc.<br> Discord is a trademark of Discord Inc.
+</p>
+    <p><i id="randomMessages">Turn an adblocker on, clone this website, and sail the seven seas.</i></p>
+    <p>
+      <a href="https://github.com/Terminal/Discord_Fork/blob/master/LICENCE">Licence</a> |
+      <a href="/docs/attribution">Attribution</a> |
+      <a href="https://github.com/Terminal/Discord_Fork">Source</a>
+    </p>
+  </div>
+</div>
+<div id="login-modal" class="modal modal--close">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1>Login to GitHub</h1>
+    <p>You need to Login to GitHub to continue</p>
+    <a class="btn wisteria white-text" href="https://github.com/login/oauth/authorize?client_id=6fff2201b71ad2d63131&scope=public_repo">Login via GitHub</a>
+  </div>
+</div>
+<script src="https://discordbots.co.uk/assets/js/smoothscroll.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://discordbots.co.uk/assets/js/jarallax.min.js" type="text/javascript" charset="utf-8"></script>
+
+  </body>
+</html>

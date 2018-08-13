@@ -1,0 +1,135 @@
+<html>
+  <head>
+    <!-- Main content to SEO -->
+
+  <title>Bot card order calculations - Discord Fork Developer Portal</title>
+
+
+<meta property="og:title" content="Bot card order calculations" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+<meta property="og:description" content="The algorithm which determines the rank on Discord_Fork - discordbots.co.uk" />
+<meta name="description" content="The algorithm which determines the rank on Discord_Fork - discordbots.co.uk" />
+
+
+<meta property="og:image" content="https://discordbots.co.uk/assets/images/logo.png" />
+<link rel="icon" type="image/x-icon" href="https://discordbots.co.uk/assets/images/logo.png">
+
+
+<meta name="revisit-after" content="2 days">
+<meta name="keywords" content="discord, bots, botlist">
+<meta name="theme-color" content="#3498db">
+
+<!-- Style and JS stuff -->
+<link rel="stylesheet" href="https://discordbots.co.uk/assets/css/custom.css">
+<script src="/assets/js/bundle.js" type="text/javascript" charset="utf-8"></script>
+<script>
+  delete localStorage;
+</script>
+
+  </head>
+  <body data-ls-type="docs">
+    <div class="nav-container">
+      <span id="menu-icon"></span>
+    
+      <div class="nav-content">
+        <h4 class="center">
+          <a href="/docs">
+            Discord Fork Developer Portal
+          </a>
+        </h4>
+      </div>
+    
+      <div id="navside" class="sidenav" style="transform: translateX(-250px);">
+        <a href="/">Back to Forklist</a>
+        <a href="/docs/">Docs Homepage</a>
+      </div>
+    </div>
+    <section class="container">
+      <p>As of the 2nd August 2018, Discord_Fork operates on a “score” based system.<br />
+The order is calculated via this piece of JavaScript.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Create a random score between 0 and 1 point</span>
+<span class="kd">let</span> <span class="nx">calculatedScore</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">();</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">listItem</span><span class="p">.</span><span class="nx">github</span> <span class="o">&amp;&amp;</span> <span class="nx">listItem</span><span class="p">.</span><span class="nx">github</span><span class="p">.</span><span class="nx">repo</span> <span class="o">&amp;&amp;</span> <span class="nx">listItem</span><span class="p">.</span><span class="nx">github</span><span class="p">.</span><span class="nx">owner</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// If there's a GitHub repo, add 1 point.</span>
+  <span class="nx">calculatedScore</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// For every magnitude of 10 stars, add 0.5 points</span>
+<span class="c1">// 1 star = 0 points</span>
+<span class="c1">// 10 stars = 0.5 points</span>
+<span class="c1">// 100 stars = 1 point</span>
+<span class="c1">// 1000 stars = 1.5 points</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">stargazers_count</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">itemCard</span><span class="p">.</span><span class="nx">dataset</span><span class="p">.</span><span class="nx">stars</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">stargazers_count</span><span class="p">;</span>
+  <span class="nx">calculatedScore</span> <span class="o">+=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">log10</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">stargazers_count</span> <span class="o">||</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.5</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// For any licence, add 0.2 points.</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">license</span> <span class="o">&amp;&amp;</span> <span class="nx">data</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">license</span><span class="p">.</span><span class="nx">spdx_id</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">itemCard</span><span class="p">.</span><span class="nx">dataset</span><span class="p">.</span><span class="nx">licence</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">license</span><span class="p">.</span><span class="nx">spdx_id</span><span class="p">;</span>
+  <span class="nx">calculatedScore</span> <span class="o">+=</span> <span class="mf">0.2</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="explaination">Explaination</h2>
+<ul>
+  <li>Every bot gets a random score from 0 to 1.</li>
+  <li>Having a GitHub repository increases your score by 1.</li>
+  <li>Each star on the GitHub repository increases your score by 0.02.</li>
+</ul>
+
+    </section>
+    <div class="box-container primary-flat no-border-radius no-margin">
+  <div class="center">
+    <a class="btn white" href="https://github.com/Terminal/Discord_Fork/blob/master/_docs/rank.md">
+      <img class="github-logo" src="/assets/images/GitHub-Mark-32px.png">
+      <span class="black-text bold">View this page on GitHub</span>
+    </a>
+    
+      
+        <a class="btn white" href="/">
+          <span class="black-text bold">Bots</span>
+        </a>
+      
+    
+      
+        <a class="btn white" href="/servers">
+          <span class="black-text bold">Servers</span>
+        </a>
+      
+    
+      
+    
+      
+        <a class="btn white" href="/docs">
+          <span class="black-text bold">Documentation</span>
+        </a>
+      
+    
+    <hr>
+    <p>Copyright 2017 - 2018, Terminal.ink<br> Original concept by AlexFlipnote<br> GitHub® is a trademark of GitHub, Inc.<br> Discord is a trademark of Discord Inc.
+</p>
+    <p><i id="randomMessages">Turn an adblocker on, clone this website, and sail the seven seas.</i></p>
+    <p>
+      <a href="https://github.com/Terminal/Discord_Fork/blob/master/LICENCE">Licence</a> |
+      <a href="/docs/attribution">Attribution</a> |
+      <a href="https://github.com/Terminal/Discord_Fork">Source</a>
+    </p>
+  </div>
+</div>
+<div id="login-modal" class="modal modal--close">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1>Login to GitHub</h1>
+    <p>You need to Login to GitHub to continue</p>
+    <a class="btn wisteria white-text" href="https://github.com/login/oauth/authorize?client_id=6fff2201b71ad2d63131&scope=public_repo">Login via GitHub</a>
+  </div>
+</div>
+<script src="https://discordbots.co.uk/assets/js/smoothscroll.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://discordbots.co.uk/assets/js/jarallax.min.js" type="text/javascript" charset="utf-8"></script>
+
+  </body>
+</html>

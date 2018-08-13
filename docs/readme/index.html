@@ -1,0 +1,151 @@
+<html>
+  <head>
+    <!-- Main content to SEO -->
+
+  <title>Discord_Fork README.md file - Discord Fork Developer Portal</title>
+
+
+<meta property="og:title" content="Discord_Fork README.md file" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+<meta property="og:description" content="Information about the Discord_Fork application and software - discordbots.co.uk" />
+<meta name="description" content="Information about the Discord_Fork application and software - discordbots.co.uk" />
+
+
+<meta property="og:image" content="https://discordbots.co.uk/assets/images/logo.png" />
+<link rel="icon" type="image/x-icon" href="https://discordbots.co.uk/assets/images/logo.png">
+
+
+<meta name="revisit-after" content="2 days">
+<meta name="keywords" content="discord, bots, botlist">
+<meta name="theme-color" content="#3498db">
+
+<!-- Style and JS stuff -->
+<link rel="stylesheet" href="https://discordbots.co.uk/assets/css/custom.css">
+<script src="/assets/js/bundle.js" type="text/javascript" charset="utf-8"></script>
+<script>
+  delete localStorage;
+</script>
+
+  </head>
+  <body data-ls-type="docs">
+    <div class="nav-container">
+      <span id="menu-icon"></span>
+    
+      <div class="nav-content">
+        <h4 class="center">
+          <a href="/docs">
+            Discord Fork Developer Portal
+          </a>
+        </h4>
+      </div>
+    
+      <div id="navside" class="sidenav" style="transform: translateX(-250px);">
+        <a href="/">Back to Forklist</a>
+        <a href="/docs/">Docs Homepage</a>
+      </div>
+    </div>
+    <section class="container">
+      <h1 id="discord_fork">Discord_Fork</h1>
+<p>The serverless (except for OAuth flow) Discord Bot list.</p>
+
+<p>Add your bot <a href="https://discordbots.co.uk/edit">via the E-Zed editor</a> or <a href="https://discordbots.co.uk/docs/adding-a-bot/">via GitHub</a></p>
+
+<p>NOTE: Please do not complain over how <em>bad</em> the site is made, this is mostly made as a
+way to be more unique and prove that a list site can possibly be made with Jekyll.</p>
+
+<h2 id="requirements">Requirements</h2>
+<ul>
+  <li>Ruby 2.4 or above - https://rubyinstaller.org/downloads/</li>
+  <li>jekyll &amp; bundle - https://jekyllrb.com/</li>
+  <li>sass &amp; scss_lint - Ruby Packages (gem install)</li>
+  <li>Node.js 10.x</li>
+</ul>
+
+<h2 id="commands">Commands</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle exec jekyll serve
+    Testing website locally with localhost (Port 4000 is default)
+
+scss-lint
+    Check if your source code is linter friendly (SCSS only)
+
+webpack --watch
+    Build all JavaScript files into a single file
+</code></pre></div></div>
+
+<h2 id="first-setup">First Setup</h2>
+<p>You will require some kind of Linux. I prefer Ubuntu 18.04.
+Windows users may wish to use the Windows Subsystem for Linux.</p>
+
+<h3 id="ubuntu-1804-1604-wsl-ubuntu">Ubuntu 18.04, 16.04, WSL Ubuntu</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+sudo apt install -y build-essential ruby-full ruby-bundler nodejs
+npm i
+
+# run both simultaneously
+bundler exec jekyll serve
+webpack --watch
+</code></pre></div></div>
+
+<h3 id="authentication-server">Authentication Server</h3>
+<p><a href="https://github.com/prose/gatekeeper#setup-your-gatekeeper">Follow me</a>
+Edit <code class="highlighter-rouge">_data/links.yml</code> to point to the auth server.</p>
+
+<h2 id="thanks">Thanks</h2>
+<p><a href="https://discordbots.co.uk/docs/attribution">We love you all</a></p>
+
+<h2 id="technical-support">Technical Support</h2>
+<p><a href="https://discord.gg/8uC6aKZ">discordapp</a></p>
+
+    </section>
+    <div class="box-container primary-flat no-border-radius no-margin">
+  <div class="center">
+    <a class="btn white" href="https://github.com/Terminal/Discord_Fork/blob/master/README.md">
+      <img class="github-logo" src="/assets/images/GitHub-Mark-32px.png">
+      <span class="black-text bold">View this page on GitHub</span>
+    </a>
+    
+      
+        <a class="btn white" href="/">
+          <span class="black-text bold">Bots</span>
+        </a>
+      
+    
+      
+        <a class="btn white" href="/servers">
+          <span class="black-text bold">Servers</span>
+        </a>
+      
+    
+      
+    
+      
+        <a class="btn white" href="/docs">
+          <span class="black-text bold">Documentation</span>
+        </a>
+      
+    
+    <hr>
+    <p>Copyright 2017 - 2018, Terminal.ink<br> Original concept by AlexFlipnote<br> GitHub® is a trademark of GitHub, Inc.<br> Discord is a trademark of Discord Inc.
+</p>
+    <p><i id="randomMessages">Turn an adblocker on, clone this website, and sail the seven seas.</i></p>
+    <p>
+      <a href="https://github.com/Terminal/Discord_Fork/blob/master/LICENCE">Licence</a> |
+      <a href="/docs/attribution">Attribution</a> |
+      <a href="https://github.com/Terminal/Discord_Fork">Source</a>
+    </p>
+  </div>
+</div>
+<div id="login-modal" class="modal modal--close">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1>Login to GitHub</h1>
+    <p>You need to Login to GitHub to continue</p>
+    <a class="btn wisteria white-text" href="https://github.com/login/oauth/authorize?client_id=6fff2201b71ad2d63131&scope=public_repo">Login via GitHub</a>
+  </div>
+</div>
+<script src="https://discordbots.co.uk/assets/js/smoothscroll.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://discordbots.co.uk/assets/js/jarallax.min.js" type="text/javascript" charset="utf-8"></script>
+
+  </body>
+</html>
