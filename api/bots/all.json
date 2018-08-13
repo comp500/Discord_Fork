@@ -374,13 +374,17 @@
     "client_id" : "334186716770598912",
     "application_id" : "334186716770598912",
     "name" : "Neko",
-    "prefix": "",
-    "description" : "Lovely pictures of Catgirls ^^",
-    "long_description" : "Lovely pictures of Catgirls ^^",
+    "prefix": "~ | cusotm",
+    "description" : "Lovely pictures of Catgirls ^^ ",
+    "long_description" : "Lovely pictures of Catgirls ^^ ",
     "url_safe": "neko",
-    "avatar" : "https://images.discordapp.net/avatars/334186716770598912/3e02429ede1548d20d1e5e55965b0461.png",
+    "avatar" : "https://avatars2.githubusercontent.com/u/34457007?s=200&v=4",
     "link" : "https://bot.nekos.life",
-    "support" : "",
+    "support" : "https://invite.nekos.life",
+    "github" : { 
+        "owner" : "Nekos-life",
+        "repo" : "neko-bot-jda"
+    },
     "verified" : false,
     "nsfw" : false
   },{
