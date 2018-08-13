@@ -1,0 +1,7 @@
+@import 'assets/emoji-map';
+
+@each $name, $code in $emoji-map {
+  .twa-#{$name} {
+    background-image: url("https://twemoji.maxcdn.com/2/svg/#{$code}.svg");
+  }
+}
