@@ -416,6 +416,24 @@
     "verified" : false,
     "nsfw" : false
   },{
+    "id" : "365958655926992896",
+    "client_id" : "365958655926992896",
+    "application_id" : "365958655926992896",
+    "name" : "Luki",
+    "prefix": "l.",
+    "description" : "Luki is an easy-to-use bot with commands that can be used...",
+    "long_description" : "Luki is an easy-to-use bot with commands that can be used for fun, moderation, games, and more!",
+    "url_safe": "luki",
+    "avatar" : "https://cdn.discordapp.com/avatars/365958655926992896/cd50f6c11a30a4e9f76f825d8c4512a9.png?size=2048",
+    "link" : "https://luki.xyz/invite",
+    "support" : "https://discord.gg/76PAmCv",
+    "github" : { 
+        "owner" : "LukiBot",
+        "repo" : "Luki"
+    },
+    "verified" : false,
+    "nsfw" : true
+  },{
     "id" : "375750637540868107",
     "client_id" : "375750637540868107",
     "application_id" : "375750637540868107",
