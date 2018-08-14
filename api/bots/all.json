@@ -434,6 +434,20 @@
     "verified" : false,
     "nsfw" : true
   },{
+    "id" : "367202192609902593",
+    "client_id" : "367202192609902593",
+    "application_id" : "367202192609902593",
+    "name" : "Gearz",
+    "prefix": "? or custom",
+    "description" : "A multifunctional bot with Starboard, Server based settin...",
+    "long_description" : "A multifunctional bot with Starboard, Server based settings, general, moderation and fun command, and awesome welcome messages.",
+    "url_safe": "gearz",
+    "avatar" : "https://images.discordapp.net/avatars/367202192609902593/ba4784ea9b100cd19e2ea2c6976f1f3f.png",
+    "link" : "https://discordapp.com/oauth2/authorize?client_id=367202192609902593&scope=bot&permissions=8",
+    "support" : "https://discord.gg/jr8g83W",
+    "verified" : false,
+    "nsfw" : false
+  },{
     "id" : "375750637540868107",
     "client_id" : "375750637540868107",
     "application_id" : "375750637540868107",
