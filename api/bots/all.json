@@ -448,6 +448,20 @@
     "verified" : false,
     "nsfw" : false
   },{
+    "id" : "371320386693890048",
+    "client_id" : "371320386693890048",
+    "application_id" : "371320386693890048",
+    "name" : "Brotat",
+    "prefix": "%",
+    "description" : "The one and only bot you will need",
+    "long_description" : "The one and only bot you will need",
+    "url_safe": "brotat",
+    "avatar" : "https://cdn.discordapp.com/avatars/371320386693890048/d87a47a4fa44698bb9e47b3e6e804980.png",
+    "link" : "https://discordapp.com/oauth2/authorize?client_id=371320386693890048&scope=bot&permissions=8",
+    "support" : "",
+    "verified" : false,
+    "nsfw" : false
+  },{
     "id" : "375750637540868107",
     "client_id" : "375750637540868107",
     "application_id" : "375750637540868107",
