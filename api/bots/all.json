@@ -210,6 +210,20 @@
     "verified" : false,
     "nsfw" : false
   },{
+    "id" : "284196779044503553",
+    "client_id" : "284196779044503553",
+    "application_id" : "284196779044503553",
+    "name" : "mBot",
+    "prefix": "/",
+    "description" : "A Utilitarian Discord Bot",
+    "long_description" : "A Utilitarian Discord Bot",
+    "url_safe": "mbot",
+    "avatar" : "",
+    "link" : "https://invite.mbot.party",
+    "support" : "https://server.mbot.party",
+    "verified" : false,
+    "nsfw" : false
+  },{
     "id" : "285480424904327179",
     "client_id" : "285480424904327179",
     "application_id" : "285480424904327179",
@@ -271,6 +285,20 @@
         "owner" : "TitanEmbeds",
         "repo" : "Titan"
     },
+    "verified" : false,
+    "nsfw" : false
+  },{
+    "id" : "300800171988484096",
+    "client_id" : "300800171988484096",
+    "application_id" : "300800171988484096",
+    "name" : "Bender",
+    "prefix": ";",
+    "description" : "Multipurpose bot with automod, music, and fun commands.",
+    "long_description" : "Multipurpose bot with automod, music, and fun commands.",
+    "url_safe": "bender",
+    "avatar" : "https://cdn.discordapp.com/avatars/300800171988484096/d114722cd9e64637c8545c761f66e40d.png?size=2048",
+    "link" : "https://benderbot.co/invite",
+    "support" : "https://discord.gg/99xaeGn",
     "verified" : false,
     "nsfw" : false
   },{
