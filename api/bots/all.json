@@ -554,6 +554,24 @@
     "verified" : false,
     "nsfw" : false
   },{
+    "id" : "398690824721924107",
+    "client_id" : "398690824721924107",
+    "application_id" : "398690824721924107",
+    "name" : "AdvaithBot",
+    "prefix": "!! (customizable)",
+    "description" : "A multipurpose bot with fun, utility, moderation, and more!",
+    "long_description" : "A multipurpose bot with fun, utility, moderation, and more!",
+    "url_safe": "advaithbot",
+    "avatar" : "https://cdn.discordapp.com/avatars/398690824721924107/4a5c4e12547c316382ba3b4fabe768cc.webp?size=1024",
+    "link" : "https://add.advaithbot.com/from/discordfork",
+    "support" : "https://discord.gg/WxPH3Fc",
+    "github" : { 
+        "owner" : "AdvaithBot",
+        "repo" : "advaithbot"
+    },
+    "verified" : false,
+    "nsfw" : false
+  },{
     "id" : "401477146511409183",
     "client_id" : "401477146511409183",
     "application_id" : "401477146511409183",
