@@ -490,6 +490,20 @@
     "verified" : false,
     "nsfw" : false
   },{
+    "id" : "372022813839851520",
+    "client_id" : "372022813839851520",
+    "application_id" : "372022813839851520",
+    "name" : "AltDentifier",
+    "prefix": "; or mention (customisable)",
+    "description" : "Protection against spambots and alt accounts.",
+    "long_description" : "Protection against spambots and alt accounts.",
+    "url_safe": "altdentifier",
+    "avatar" : "https://cdn.discordapp.com/avatars/372022813839851520/d63b356ed66b8b4ba9f3af0d2c27f224.png",
+    "link" : "https://altdentifier.xyz/invite?ref=dbuk",
+    "support" : "https://discord.gg/BP2SV3J",
+    "verified" : false,
+    "nsfw" : false
+  },{
     "id" : "375750637540868107",
     "client_id" : "375750637540868107",
     "application_id" : "375750637540868107",
