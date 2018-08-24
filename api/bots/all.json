@@ -302,6 +302,20 @@
     "verified" : false,
     "nsfw" : false
   },{
+    "id" : "303181184718995457",
+    "client_id" : "303181184718995457",
+    "application_id" : "303181184718995457",
+    "name" : "PenguBot",
+    "prefix": "p!",
+    "description" : "Multi-Purpose Bot with Fun, Utilities, Powerful Music, Se...",
+    "long_description" : "Multi-Purpose Bot with Fun, Utilities, Powerful Music, Server Management, Starboard and much more!",
+    "url_safe": "pengubot",
+    "avatar" : "",
+    "link" : "https://discordapp.com/oauth2/authorize?client_id=303181184718995457&scope=bot&permissions=506850422&response_type=code&redirect_url=https://www.pengubot.com",
+    "support" : "https://discord.gg/u8WYw5r",
+    "verified" : false,
+    "nsfw" : false
+  },{
     "id" : "303904389968560129",
     "client_id" : "303904389968560129",
     "application_id" : "303904389968560129",
