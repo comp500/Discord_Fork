@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
   <head>
     <!-- Main content to SEO -->
 
@@ -8,8 +8,16 @@
 <meta property="og:title" content="AlexFlipnote" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+
 <meta property="og:description" content="The personal server to AlexFlipnote - discordbots.co.uk" />
 <meta name="description" content="The personal server to AlexFlipnote - discordbots.co.uk" />
+
+
+<meta http-equiv="Content-Language" content="en">
+<link rel="alternate" hreflang="en" href=" https://discordbots.co.uk/servers/86484642730885120/"/>
+<link rel="alternate" hreflang="fr" href="https://discordbots.co.uk/fr/servers/86484642730885120/"/>
+
 
 
 <meta property="og:image" content="https://alexflipnote.xyz/assets/images/profile.png" />
@@ -22,6 +30,10 @@
 
 <!-- Style and JS stuff -->
 <link rel="stylesheet" href="https://discordbots.co.uk/assets/css/custom.css">
+
+<script src="/api/languages.js"></script>
+
+
 <script src="https://discordbots.co.uk/assets/bundler/bundle.js" type="text/javascript" charset="utf-8"></script>
 <script>
   delete localStorage;
@@ -44,8 +56,11 @@
       </a>
       <div class="buttons">
         <a class="btn peter-river" target="_blank" href="https://github.com/Terminal/Discord_Fork/blob/master/README.md">Add your own server</a>
-        <a class="btn orange" target="_blank" href="https://discord.gg/8uC6aKZ">Terminal.ink Discord</a>
-        <a class="btn wisteria" id="loginButton" href="/oauth/login">Login to GitHub</a>
+        <a class="btn orange" target="_blank" href="https://discord.gg/8uC6aKZ">Join Terminal.ink on Discord</a>
+        <a class="btn wisteria" id="loginButton" href="/oauth/login" data-logout="Logout">Login via GitHub</a>
+        <a class="btn white emoji-button" href="/lang">
+          <span class="emoji twa-globe-showing-europe-africa"></span>
+        </a>
       </div>
       
     </div>
@@ -96,9 +111,10 @@
     "prefix": "",
     "description" : "The personal server to AlexFlipnote",
     "long_description" : "The personal server to AlexFlipnote, packed with memes as you join in",
-    "url_safe": "alexflipnote",
+    "url_safe": "/servers/86484642730885120/",
     "avatar" : "https://alexflipnote.xyz/assets/images/profile.png",
     "link" : "https://discord.gg/DpxkY3x",
+    "lang" : "",
     "support" : "",
     "verified" : true,
     "nsfw" : false
@@ -108,7 +124,7 @@
   <div class="center">
     <a class="btn white" href="https://github.com/Terminal/Discord_Fork/blob/master/_servers/86484642730885120.md">
       <img class="github-logo" src="/assets/images/GitHub-Mark-32px.png">
-      <span class="black-text bold">View this page on GitHub</span>
+      <span class="black-text bold">View this page in GitHub</span>
     </a>
     
       
@@ -124,8 +140,6 @@
       
     
       
-    
-      
         <a class="btn white" href="/docs">
           <span class="black-text bold">Documentation</span>
         </a>
@@ -138,7 +152,7 @@
     <p>
       <a href="https://github.com/Terminal/Discord_Fork/blob/master/LICENCE">Licence</a> |
       <a href="/docs/attribution">Attribution</a> |
-      <a href="https://github.com/Terminal/Discord_Fork">Source</a>
+      <a href="https://github.com/Terminal/Discord_Fork">Source Code</a>
     </p>
   </div>
 </div>

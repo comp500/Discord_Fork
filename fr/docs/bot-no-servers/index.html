@@ -1,0 +1,160 @@
+<html lang="fr">
+  <head>
+    <!-- Main content to SEO -->
+
+  <title>No servers on dropdown when inviting Discord bots. - Documentation de développement</title>
+
+
+<meta property="og:title" content="No servers on dropdown when inviting Discord bots." />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+
+<meta property="og:description" content="How to fix problems when there are no servers on the Discord Bot invite dropdown - When inviting a bot, you may need permissions, or you are logged into the wrong user account. - discordbots.co.uk" />
+<meta name="description" content="How to fix problems when there are no servers on the Discord Bot invite dropdown - When inviting a bot, you may need permissions, or you are logged into the wrong user account. - discordbots.co.uk" />
+
+
+<meta http-equiv="Content-Language" content="fr">
+<link rel="alternate" hreflang="en" href=" https://discordbots.co.uk/docs/bot-no-servers/"/>
+<link rel="alternate" hreflang="fr" href="https://discordbots.co.uk/fr/docs/bot-no-servers/"/>
+
+
+
+<meta property="og:image" content="https://discordbots.co.uk/assets/images/logo.png" />
+<link rel="icon" type="image/x-icon" href="https://discordbots.co.uk/assets/images/logo.png">
+
+
+<meta name="revisit-after" content="2 days">
+<meta name="keywords" content="discord, bots, botlist">
+<meta name="theme-color" content="#3498db">
+
+<!-- Style and JS stuff -->
+<link rel="stylesheet" href="https://discordbots.co.uk/assets/css/custom.css">
+
+<script src="/fr/api/languages.js"></script>
+
+
+<script src="https://discordbots.co.uk/assets/bundler/bundle.js" type="text/javascript" charset="utf-8"></script>
+<script>
+  delete localStorage;
+</script>
+
+  </head>
+  <body data-ls-type="docs">
+    <div class="nav-container">
+      <span id="menu-icon"></span>
+    
+      <div class="nav-content">
+        <h4 class="center">
+          <a href="/fr/docs">
+            Documentation de développement
+          </a>
+        </h4>
+      </div>
+    
+      <div id="navside" class="sidenav" style="transform: translateX(-250px);">
+        <a href="/fr/">Back to Forklist</a>
+        <a href="/fr/docs/">Docs Homepage</a>
+      </div>
+    </div>
+    <section class="container">
+      <h1 id="no-servers-when-inviting-bots">No servers when inviting Bots</h1>
+<p>When inviting a bot, your dropdown box may be empty, like the following image:</p>
+
+<p><img src="/assets/images/invite/no_servers.png" alt="An empty Discord dropdown box" /></p>
+
+<p>This can mean one of many things:</p>
+
+<ul>
+  <li><a href="#fixing-permissions">You do not have adequate permissions to invite the bot</a></li>
+  <li><a href="#switching-accounts">You are logged in to the wrong Discord user account <em><strong>within the web browser</strong></em></a></li>
+</ul>
+
+<p>There are no other reasons why this error occurs.</p>
+
+<h2 id="but-i-am-an-owner---look-i-have-a-role">“But I am an owner - Look I have a role!”</h2>
+<p>Please ask the person with the crown icon to follow the <a href="#fixing-permissions">Fixing Permissions</a> step.<br />
+The user with the crown is the actual owner.</p>
+
+<p><img src="/assets/images/invite/crown.png" alt="Crown" /></p>
+
+<h2 id="fixing-permissions">Fixing permissions</h2>
+<p><strong>Please contact your server administrator for permission.</strong></p>
+
+<p>The server administrator will need to follow the following steps:</p>
+
+<ol>
+  <li>Enable the “Manage Server” permission
+    <ul>
+      <li><img src="/assets/images/invite/enabling-manage-server.gif" alt="A video toggling the &quot;Manage Server&quot; permission" /></li>
+    </ul>
+  </li>
+  <li>Give a user the role which you enabled “Manage Server” on
+    <ul>
+      <li><img src="/assets/images/invite/giving-a-role.gif" alt="A video giving a role to a user" /></li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="switching-accounts">Switching accounts</h2>
+<ol>
+  <li>Log out, by navigating to <a href="https://discordapp.com">https://discordapp.com</a></li>
+  <li>Open Discord</li>
+  <li>Click user settings, and log out</li>
+  <li>Log back in, and go back to the bot you were trying to add
+    <ul>
+      <li><img src="/assets/images/invite/logging-off.gif" alt="A video of a user logging off" /></li>
+    </ul>
+  </li>
+</ol>
+
+    </section>
+    <div class="box-container primary-flat no-border-radius no-margin">
+  <div class="center">
+    <a class="btn white" href="https://github.com/Terminal/Discord_Fork/blob/master/_docs/bot-no-servers.md">
+      <img class="github-logo" src="/assets/images/GitHub-Mark-32px.png">
+      <span class="black-text bold">Voir cette page sur GitHub</span>
+    </a>
+    
+      
+        <a class="btn white" href="/fr/">
+          <span class="black-text bold">Bots</span>
+        </a>
+      
+    
+      
+        <a class="btn white" href="/fr/servers">
+          <span class="black-text bold">Serveurs</span>
+        </a>
+      
+    
+      
+        <a class="btn white" href="/fr/docs">
+          <span class="black-text bold">Développement</span>
+        </a>
+      
+    
+    <hr>
+    <p>Copyright 2017 - 2018, Terminal.ink<br> Concept original par AlexFlipnote<br> GitHub® est une marque de GitHub, Inc.<br> Discord est une marque de Discord Inc.<br> Traduction par Bowser65
+</p>
+    <p><i id="randomMessages">Turn an adblocker on, clone this website, and sail the seven seas.</i></p>
+    <p>
+      <a href="https://github.com/Terminal/Discord_Fork/blob/master/LICENCE">Licence</a> |
+      <a href="/fr/docs/attribution">Attribution</a> |
+      <a href="https://github.com/Terminal/Discord_Fork">Code Source</a>
+    </p>
+  </div>
+</div>
+<div id="login-modal" class="modal modal--close">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1>Login to GitHub</h1>
+    <p>You need to Login to GitHub to continue</p>
+    <a class="btn wisteria white-text" href="https://github.com/login/oauth/authorize?client_id=6fff2201b71ad2d63131&scope=public_repo">Login via GitHub</a>
+  </div>
+</div>
+<script src="https://discordbots.co.uk/assets/js/smoothscroll.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://discordbots.co.uk/assets/js/jarallax.min.js" type="text/javascript" charset="utf-8"></script>
+
+  </body>
+</html>

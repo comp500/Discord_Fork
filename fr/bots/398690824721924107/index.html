@@ -1,0 +1,842 @@
+<html lang="fr">
+  <head>
+    <!-- Main content to SEO -->
+
+  <title>AdvaithBot - Un répertoire de bots Discord</title>
+
+
+<meta property="og:title" content="AdvaithBot" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+
+<meta property="og:description" content="A multipurpose bot with fun, utility, moderation, and more! - discordbots.co.uk" />
+<meta name="description" content="A multipurpose bot with fun, utility, moderation, and more! - discordbots.co.uk" />
+
+
+<meta http-equiv="Content-Language" content="fr">
+<link rel="alternate" hreflang="en" href=" https://discordbots.co.uk/bots/398690824721924107/"/>
+<link rel="alternate" hreflang="fr" href="https://discordbots.co.uk/fr/bots/398690824721924107/"/>
+
+
+
+<meta property="og:image" content="https://cdn.discordapp.com/avatars/398690824721924107/4a5c4e12547c316382ba3b4fabe768cc.webp?size=1024" />
+<link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/avatars/398690824721924107/4a5c4e12547c316382ba3b4fabe768cc.webp?size=1024">
+
+
+<meta name="revisit-after" content="2 days">
+<meta name="keywords" content="discord, bots, botlist">
+<meta name="theme-color" content="#3498db">
+
+<!-- Style and JS stuff -->
+<link rel="stylesheet" href="https://discordbots.co.uk/assets/css/custom.css">
+
+<script src="/fr/api/languages.js"></script>
+
+
+<script src="https://discordbots.co.uk/assets/bundler/bundle.js" type="text/javascript" charset="utf-8"></script>
+<script>
+  delete localStorage;
+</script>
+
+  </head>
+  <body data-ls-type="item">
+    <section class="fullscreen half">
+  <div data-jarallax data-speed="0.25" class="background" style="background-image: url('/assets/images/background_bots.jpg');"></div>
+  <div class="center-object">
+    <div class="center-items">
+      <a href="/fr/">
+        <section class="me unset">
+          <img draggable="false" src="https://discordbots.co.uk/assets/images/logo.png" class="image-title" style="margin-right: .5em;">
+          <div>
+            <h1 class="title no-margin white-text">Un répertoire de bots Discord</h1>
+            <span class="undertitle white-text">La liste des bots est trouvable sur GitHub.</span>
+          </div>
+        </section>
+      </a>
+      <div class="buttons">
+        <a class="btn peter-river" target="_blank" href="/fr/edit">Ajouter un bot</a>
+        <a class="btn orange" target="_blank" href="https://discord.gg/8uC6aKZ">Rejoindre le Discord Terminal.ink</a>
+        <a class="btn wisteria" id="loginButton" href="/fr/oauth/login" data-logout="Déconnexion">Connexion via GitHub</a>
+        <a class="btn white emoji-button" href="/fr/lang">
+          <span class="emoji twa-globe-showing-europe-africa"></span>
+        </a>
+      </div>
+      
+    </div>
+  </div>
+  <!-- <div id="fade" class="arrow bounce"></div> -->
+</section>
+
+
+    <section class="container">
+      <div class="center-text card-container">
+        <section class="card profile">
+          <div class="avatar">
+            <img id="avatar" class="avatar" src="https://cdn.discordapp.com/avatars/398690824721924107/4a5c4e12547c316382ba3b4fabe768cc.webp?size=1024">
+          </div>
+          <h2 class="name ">
+            AdvaithBot
+            
+          </h2>
+          <div class="link buttons" id="buttons">
+            
+              <a id="invite" class="btn emerald" href="#" >Inviter</a>
+            
+            
+              <a id="github" class="btn peter-river" href="https://github.com/AdvaithBot/advaithbot" target="_blank">GitHub</a>
+            
+            <a class="btn orange" href="https://discord.gg/WxPH3Fc" target="_blank">Aide</a>
+          </div>
+          <span class="description">
+            
+              <p><small>Préfixe: !! (customizable)</small></p>
+            
+            <p>
+              
+                A multipurpose bot with fun, utility, moderation, and more!
+              
+            </p>
+          </span>
+        </section>
+      </div>
+      <div class="custom-content">
+        <p>AdvaithBot has been updated to v2! This update has tons of new features, including 28 new commands!</p>
+
+<p>AdvaithBot is a multipurpose Discord bot.</p>
+
+<p><a class="discord-widget" href="https://discord.gg/WxPH3Fc"><img src="https://discordapp.com/api/guilds/398998849026261003/embed.png?style=banner3" alt="Discord" /></a></p>
+
+<h1 id="commands">Commands</h1>
+<p>The prefix for all commands is <code class="highlighter-rouge">!!</code>. Customizable prefixes are in development!</p>
+
+<h3 id="jump-to">Jump To:</h3>
+<ul>
+  <li><a href="#system"><img src="https://twemoji.maxcdn.com/2/svg/1f5a5.svg" class="emoji" alt="🖥" draggable="false" /> System Commands</a></li>
+  <li><a href="#fun"><img src="https://twemoji.maxcdn.com/2/svg/1f923.svg" class="emoji" alt="🤣" draggable="false" /> Fun Commands</a></li>
+  <li><a href="#animals"><img src="https://twemoji.maxcdn.com/2/svg/1f431.svg" class="emoji" alt="🐱" draggable="false" /> Animal Commands</a></li>
+  <li><a href="#search"><img src="https://twemoji.maxcdn.com/2/svg/1f50d.svg" class="emoji" alt="🔍" draggable="false" /> Search Commands</a></li>
+  <li><a href="#utility"><img src="https://twemoji.maxcdn.com/2/svg/2699.svg" class="emoji" alt="⚙️" draggable="false" /> Utility Commands</a></li>
+  <li><a href="#textcmds"><img src="https://twemoji.maxcdn.com/2/svg/1f4dd.svg" class="emoji" alt="📝" draggable="false" /> Text Commands</a></li>
+  <li><a href="#info"><img src="https://twemoji.maxcdn.com/2/svg/2139.svg" class="emoji" alt="ℹ️" draggable="false" /> Info Commands</a></li>
+  <li><a href="#mod"><img src="https://twemoji.maxcdn.com/2/svg/1f528.svg" class="emoji" alt="🔨" draggable="false" /> Moderation Commands</a></li>
+  <li><a href="#url"><img src="https://twemoji.maxcdn.com/2/svg/1f517.svg" class="emoji" alt="🔗" draggable="false" /> URL Shortener Commands</a></li>
+  <li><a href="#emoji"><img src="https://twemoji.maxcdn.com/2/svg/1f600.svg" class="emoji" alt="😀" draggable="false" /> Emoji Management Commands</a></li>
+  <li><a href="#clyde">Android Clyde Commands</a></li>
+</ul>
+
+<h2 id="system"><img src="https://twemoji.maxcdn.com/2/svg/1f5a5.svg" class="emoji" alt="🖥" draggable="false" /> System Commands</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Aliases</th>
+      <th>Description</th>
+      <th>Arguments</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">help</code></td>
+      <td><code class="highlighter-rouge">h</code></td>
+      <td>Sends the command list or info for a specific command</td>
+      <td>Command or module name (Optional)</td>
+      <td><code class="highlighter-rouge">!!help</code>, <code class="highlighter-rouge">!!help fun</code>, <code class="highlighter-rouge">!!help 8ball</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">info</code></td>
+      <td>none</td>
+      <td>Some info about the bot</td>
+      <td>none</td>
+      <td><code class="highlighter-rouge">!!info</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">invite</code></td>
+      <td>none</td>
+      <td>Sends the link to add the bot</td>
+      <td>none</td>
+      <td><code class="highlighter-rouge">!!invite</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">mutuals </code></td>
+      <td>none</td>
+      <td>Your mutual servers with AdvaithBot</td>
+      <td>none</td>
+      <td><code class="highlighter-rouge">!!mutuals</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">ping</code></td>
+      <td>none</td>
+      <td>🏓 Checks how fast the bot is responding</td>
+      <td>none</td>
+      <td><code class="highlighter-rouge">!!ping</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">prefix</code></td>
+      <td>none</td>
+      <td>Change the server prefix</td>
+      <td>New prefix (optional)</td>
+      <td><code class="highlighter-rouge">!!prefix -</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">support</code></td>
+      <td>none</td>
+      <td>Sends the link to the AdvaithBot server</td>
+      <td>none</td>
+      <td><code class="highlighter-rouge">!!support</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="fun"><img src="https://twemoji.maxcdn.com/2/svg/1f923.svg" class="emoji" alt="🤣" draggable="false" /> Fun Commands</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Aliases</th>
+      <th>Description</th>
+      <th>Arguments</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">8ball</code></td>
+      <td><code class="highlighter-rouge">eightball</code></td>
+      <td>🎱 Ask the 8ball a question!</td>
+      <td>Your question (Required)</td>
+      <td><code class="highlighter-rouge">!!8ball is AdvaithBot awesome?</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">acronym</code></td>
+      <td>none</td>
+      <td>Generates an acronym meaning for a word</td>
+      <td>Word or words to make a meaning for (Required)</td>
+      <td><code class="highlighter-rouge">acronym dab</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">cleverbot</code></td>
+      <td><code class="highlighter-rouge">cb</code></td>
+      <td>Talk to Cleverbot!</td>
+      <td>What you want to say (Required)</td>
+      <td><code class="highlighter-rouge">!!cleverbot how are you?</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">reverse</code></td>
+      <td>none</td>
+      <td>Reverses provided text</td>
+      <td>Text to reverse (Required)</td>
+      <td><code class="highlighter-rouge">!!reverse hello</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">flip</code></td>
+      <td>none</td>
+      <td>Flip a coin!</td>
+      <td><code class="highlighter-rouge">!!flip</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">trbmb</code></td>
+      <td>none</td>
+      <td>That really _____ my _____</td>
+      <td>none</td>
+      <td><code class="highlighter-rouge">!!trbmb</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="animals"><img src="https://twemoji.maxcdn.com/2/svg/1f431.svg" class="emoji" alt="🐱" draggable="false" /> Animal Commands</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Aliases</th>
+      <th>Description</th>
+      <th>Arguments</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">bird</code></td>
+      <td>none</td>
+      <td>Sends a random bird pic</td>
+      <td>none</td>
+      <td><code class="highlighter-rouge">!!bird</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">cat</code></td>
+      <td>none</td>
+      <td>Sends a random cat pic</td>
+      <td>none</td>
+      <td><code class="highlighter-rouge">!!cat</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">dog</code></td>
+      <td>none</td>
+      <td>Sends a random dog pic</td>
+      <td>none</td>
+      <td><code class="highlighter-rouge">!!dog</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">duck</code></td>
+      <td>none</td>
+      <td>Sends a random duck pic or gif</td>
+      <td>none</td>
+      <td><code class="highlighter-rouge">!!duck</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">duck gif</code></td>
+      <td>none</td>
+      <td>Sends a random duck pic</td>
+      <td>none</td>
+      <td><code class="highlighter-rouge">!!duck gif</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">duck pic</code></td>
+      <td>none</td>
+      <td>Sends a random non-animated duck pic</td>
+      <td>none</td>
+      <td><code class="highlighter-rouge">!!duck pic</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">rabbit</code></td>
+      <td>none</td>
+      <td>Sends a random rabbit pic</td>
+      <td>none</td>
+      <td><code class="highlighter-rouge">!rabbit</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="search"><img src="https://twemoji.maxcdn.com/2/svg/1f50d.svg" class="emoji" alt="🔍" draggable="false" /> Search Commands</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Aliases</th>
+      <th>Description</th>
+      <th>Arguments</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">ddg</code></td>
+      <td><code class="highlighter-rouge">duckduckgo</code></td>
+      <td>Searches <a href="https://duckduckgo.com">DuckDuckGo</a></td>
+      <td>Search query (Required)</td>
+      <td><code class="highlighter-rouge">!!ddg advaithbot</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">google</code></td>
+      <td><code class="highlighter-rouge">g</code></td>
+      <td>Searches <a href="https://google.com">Google</a></td>
+      <td>Search query (Required)</td>
+      <td><code class="highlighter-rouge">!!google advaithbot</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">urban</code></td>
+      <td><code class="highlighter-rouge">u</code></td>
+      <td>Searches <a href="https://urbandictionary.com">Urban Dictionary</a></td>
+      <td>Search query (Required)</td>
+      <td><code class="highlighter-rouge">!!urban no u</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">yt</code></td>
+      <td><code class="highlighter-rouge">youtube</code></td>
+      <td>Searches <a href="https://youtube.com">YouTube</a></td>
+      <td>Search query (Required)</td>
+      <td><code class="highlighter-rouge">!yt @someone</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="utility"><img src="https://twemoji.maxcdn.com/2/svg/2699.svg" class="emoji" alt="⚙️" draggable="false" /> Utility Commands</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Aliases</th>
+      <th>Description</th>
+      <th>Arguments</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">discrim</code></td>
+      <td>none</td>
+      <td>Find users with a certain discriminator (#XXXX)</td>
+      <td>Discriminator to search for (Optional, defaults to yours)</td>
+      <td><code class="highlighter-rouge">!!discrim</code>, <code class="highlighter-rouge">!!discrim 0001</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">embed</code></td>
+      <td>none</td>
+      <td>Says what you want in an embed</td>
+      <td>What you want it to say (Required)</td>
+      <td><code class="highlighter-rouge">!!embed hi everyone!</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">haste</code></td>
+      <td><code class="highlighter-rouge">hastebin</code></td>
+      <td>Uploads code to hastebin</td>
+      <td>Code to upload (Required)</td>
+      <td><code class="highlighter-rouge">!!haste hello</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">hook</code></td>
+      <td>none</td>
+      <td>Sends your message as a webhook</td>
+      <td>What you want it to say (Required)</td>
+      <td><code class="highlighter-rouge">!!hook hey everyone check out [AdvaithBot](https://advaithbot.com)</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">portmanteaus</code></td>
+      <td>none</td>
+      <td>Make portmanteaus with a provided word</td>
+      <td>Word to make portmanteaus with (Required)</td>
+      <td><code class="highlighter-rouge">!!portmanteaus hello</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">react</code></td>
+      <td>none</td>
+      <td>Add a reaction to a message</td>
+      <td>Message ID (Required), Emoji to react with (Required)</td>
+      <td><code class="highlighter-rouge">!!react 412350313450831874 :smiley:</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">rhymes</code></td>
+      <td>none</td>
+      <td>Get rhymes for a provided word</td>
+      <td>Word to get rhymes for (Required)</td>
+      <td><code class="highlighter-rouge">!!rhymes hello</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">say</code></td>
+      <td>none</td>
+      <td>Makes the bot say something</td>
+      <td>What you want it to say (Required)</td>
+      <td><code class="highlighter-rouge">!!say hi everyone!</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">splash</code></td>
+      <td>none</td>
+      <td>Shows the server’s invite splash screen.</td>
+      <td>none</td>
+      <td><code class="highlighter-rouge">!!splash</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">imgur</code></td>
+      <td>none</td>
+      <td>Upload an image to <a href="https://imgur.com">Imgur</a></td>
+      <td>URL to image, or attach image (Required)</td>
+      <td><code class="highlighter-rouge">!!imgur &lt;attach image&gt;</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">translate</code></td>
+      <td>none</td>
+      <td>Translate text to any language using <a href="https://translate.google.com">Google Translate</a></td>
+      <td>Language name or 2-letter code to translate to (Required), text to translate (Required)</td>
+      <td><code class="highlighter-rouge">!!translate spanish I am using Google Translate</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">upload</code></td>
+      <td>none</td>
+      <td>Uploads a file using <a href="https://biso.ga">BiSoga</a></td>
+      <td>URL to image, or attach image (Required)</td>
+      <td><code class="highlighter-rouge">!!upload &lt;attach image&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="textcmds"><img src="https://twemoji.maxcdn.com/2/svg/1f4dd.svg" class="emoji" alt="📝" draggable="false" /> Text Commands</h2>
+<p>For all text commands, the argument is the text to manipulate.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Aliases</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">bend</code></td>
+      <td>none</td>
+      <td>ʍąҟҽʂ աҽìɾժ էҽ×է Ӏìҟҽ էհìʂ</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">bubbles</code></td>
+      <td>none</td>
+      <td>ⓟⓤⓣⓢ ⓣⓔⓧⓣ ⓘⓝ ⓑⓤⓑⓑⓛⓔⓢ</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">fliptext</code></td>
+      <td>none</td>
+      <td>uʍop ǝpısdn ʇxǝʇ sdılɟ</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">mirror</code></td>
+      <td>none</td>
+      <td>ƚxɘƚ ꙅɿoɿɿim</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">tiny</code></td>
+      <td><code class="highlighter-rouge">tinycaps</code></td>
+      <td>ᴍᴀᴋᴇꜱ ᴛᴇxᴛ ɪɴᴛᴏ ᴛɪɴʏ ᴄᴀᴘꜱ</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">zalgo</code></td>
+      <td><code class="highlighter-rouge">creepify</code></td>
+      <td>m̷̳͌a̴̱͛k̷͇̐ë̵̥́s̶̰̀ ̴̨̇z̶̙̆a̵̝̓l̴͇̀ǧ̸̯o̸̞̅ ̶́͜ť̵̤ë̸̼́x̸̯̊t̷̬͒</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="info"><img src="https://twemoji.maxcdn.com/2/svg/2139.svg" class="emoji" alt="ℹ️" draggable="false" /> Info Commands</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Aliases</th>
+      <th>Description</th>
+      <th>Arguments</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">botinfo</code></td>
+      <td>none</td>
+      <td>Shows some information about a provided bot.</td>
+      <td>Bot mention or ID (required)</td>
+      <td><code class="highlighter-rouge">!!botinfo @AdvaithBot#2249</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">serverinfo</code></td>
+      <td><code class="highlighter-rouge">server</code></td>
+      <td>Shows some information about the server.</td>
+      <td>none</td>
+      <td><code class="highlighter-rouge">!!serverinfo</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">userinfo</code></td>
+      <td><code class="highlighter-rouge">user</code>, <code class="highlighter-rouge">uinfo</code></td>
+      <td>Information about a user or yourself</td>
+      <td>User mention or ID (optional)</td>
+      <td><code class="highlighter-rouge">!!user @advaith#9121</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="mod"><img src="https://twemoji.maxcdn.com/2/svg/1f528.svg" class="emoji" alt="🔨" draggable="false" /> Moderation Commands</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Aliases</th>
+      <th>Description</th>
+      <th>Arguments</th>
+      <th>Example</th>
+      <th>Required Permission</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">ban</code></td>
+      <td><code class="highlighter-rouge">b</code>, <code class="highlighter-rouge">bean</code>, <code class="highlighter-rouge">banne</code>, <code class="highlighter-rouge">banhammer</code></td>
+      <td>Swings the almighty ban hammer on a user 🔨</td>
+      <td>User (Required), Reason (optional)</td>
+      <td><code class="highlighter-rouge">!!ban @advaith#9121 spamming</code></td>
+      <td>Ban Members</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">freeze</code></td>
+      <td>none</td>
+      <td>Blocks everyone from sending messages</td>
+      <td>None</td>
+      <td><code class="highlighter-rouge">!!freeze</code></td>
+      <td>Manage Roles</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">kick</code></td>
+      <td><code class="highlighter-rouge">k</code></td>
+      <td>Kicks a user</td>
+      <td>User (Required), Reason (optional)</td>
+      <td><code class="highlighter-rouge">!!kick @advaith#9121 bye</code></td>
+      <td>Kick Members</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">purge</code></td>
+      <td><code class="highlighter-rouge">p</code>, <code class="highlighter-rouge">clear</code>, <code class="highlighter-rouge">prune</code></td>
+      <td>Deletes a specified amount of chat messages.</td>
+      <td>Amount of messages (Required)</td>
+      <td><code class="highlighter-rouge">!!purge 2</code></td>
+      <td>Manage Messages</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">role</code></td>
+      <td>none</td>
+      <td>Adds a role to or removes a role from a user</td>
+      <td>[add | remove] (Required), User (Required), Role (Required)</td>
+      <td><code class="highlighter-rouge">!!role add @advaith#9121 Awesome People</code></td>
+      <td>Manage Roles</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">ban</code></td>
+      <td><code class="highlighter-rouge">unbanne</code>, <code class="highlighter-rouge">unbean</code>, <code class="highlighter-rouge">unbanhammer</code></td>
+      <td>Unbans a user</td>
+      <td>User (Required), Reason (optional)</td>
+      <td><code class="highlighter-rouge">!!unban @advaith#9121 is gud</code></td>
+      <td>Ban Members</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">unfreeze</code></td>
+      <td>none</td>
+      <td>Unfreezes your server</td>
+      <td>none</td>
+      <td><code class="highlighter-rouge">!!unfreeze</code></td>
+      <td>Manage Roles</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="url"><img src="https://twemoji.maxcdn.com/2/svg/1f517.svg" class="emoji" alt="🔗" draggable="false" /> URL Shortener Commands</h2>
+<p>For all URL Shortener commands, the argument is the URL to shorten.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Aliases</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">bisoga</code></td>
+      <td><code class="highlighter-rouge">shorten</code></td>
+      <td>Shortens a URL using <a href="https://biso.ga">BiSoga</a></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">isgd</code></td>
+      <td>none</td>
+      <td>Shortens a URL using <a href="https://is.gd">is.gd</a></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">sketchify</code></td>
+      <td>none</td>
+      <td>Makes a URL look sketchy with <a href="https://verylegit.link">verylegit.link</a></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">tinyurl</code></td>
+      <td>none</td>
+      <td>Shortens a URL using <a href="https://tinyurl.com">TinyURL</a></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">vgd</code></td>
+      <td>none</td>
+      <td>Shortens a URL using <a href="https://v.gd">v.gd</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="emoji"><img src="https://twemoji.maxcdn.com/2/svg/1f600.svg" class="emoji" alt="😀" draggable="false" /> Emoji Management Commands</h2>
+<p>All Emoji Management commands require the Manage Emojis permission.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Aliases</th>
+      <th>Description</th>
+      <th>Arguments</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">deleteemoji</code></td>
+      <td>none</td>
+      <td>Deletes a custom emoji</td>
+      <td>Emoji (Required)</td>
+      <td><code class="highlighter-rouge">!!deleteemoji :thonking:</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">emoji</code></td>
+      <td><code class="highlighter-rouge">uploademoji</code></td>
+      <td>Creates a custom emoji</td>
+      <td>Emoji name (Required), Image URL or attach image (Required)</td>
+      <td><code class="highlighter-rouge">!!emoji Thonk &lt;attach file&gt;</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">renameemoji</code></td>
+      <td>none</td>
+      <td>Renames a custom emoji</td>
+      <td>Emoji (Required), New name (Required)</td>
+      <td><code class="highlighter-rouge">!!renameemoji :Thonk: thonking</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="clyde">Android Clyde Commands</h2>
+<p>These commands replicate Clyde’s functionality on Discord for Android, which does not support Clyde commands.<br />
+All these commands use the prefix <code class="highlighter-rouge">/</code>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Description</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">/nick</code></td>
+      <td>Changes your nickname</td>
+      <td><code class="highlighter-rouge">/nick new nickname</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">/me</code></td>
+      <td>Sends your text as italicized</td>
+      <td><code class="highlighter-rouge">/me eats cookies</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">/shrug</code></td>
+      <td>Appends ¯\_(ツ)_/¯ to your message</td>
+      <td><code class="highlighter-rouge">/shrug</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">/tableflip</code></td>
+      <td>Appends (╯°□°）╯︵ ┻━┻ to your message</td>
+      <td><code class="highlighter-rouge">/tableflip</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">/unflip</code></td>
+      <td>Appends ┬─┬ ノ( ゜-゜ノ) to your message</td>
+      <td><code class="highlighter-rouge">/unflip</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="chat">Chat</h1>
+<iframe id="discord" src="https://titanembeds.com/embed/398998849026261003?theme=DiscordDark&amp;defaultchannel=399069831820869632&amp;css=217&amp;scrollbartheme=inset-dark&amp;fixedsidenav=true&amp;lockscrollbar=true" height="600" sandbox="allow-scripts allow-same-origin">Discord</iframe>
+
+<style>
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 20px;
+}
+iframe#discord {
+    border: none;
+    height: 600px;
+    width: 100%
+}
+iframe#discord, .discord-widget img {
+    border-radius: 5px
+}
+</style>
+
+
+      </div>
+    </section>
+    
+    <div id="invite-modal" class="modal modal--close">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1>Thanks!</h1>
+    <h2>Having problems?</h2>
+    <ul>
+      <li><a href="/fr/docs/bot-no-servers">There's nothing to select in the "Select a server" dropdown</a></li>
+      <li><a href="/fr/docs/bot-private-error">"The bot is private. Only the bot owner can add it."</a></li>
+      <li><a href="/fr/docs/bot-requires-code-grant">"Bot requires code grant"</a></li>
+      <li><a href="/fr/docs/bot-unknown-error">"UNKNOWN_ERROR"</a></li>
+    </ul>
+    <p>You can always join us at <a href="https://discord.gg/8uC6aKZ">Discord</a> if you need more help.</p>
+    <p><small>This window will close itself when you close the Discord bot invite screen, or you click the &times; button</small></p>
+  </div>
+</div>
+
+    
+    <script>
+      const data = ({
+            "id" : "398690824721924107",
+    "client_id" : "398690824721924107",
+    "application_id" : "398690824721924107",
+    "name" : "AdvaithBot",
+    "prefix": "!! (customizable)",
+    "description" : "A multipurpose bot with fun, utility, moderation, and more!",
+    "long_description" : "A multipurpose bot with fun, utility, moderation, and more!",
+    "url_safe": "/bots/398690824721924107/",
+    "avatar" : "https://cdn.discordapp.com/avatars/398690824721924107/4a5c4e12547c316382ba3b4fabe768cc.webp?size=1024",
+    "link" : "https://add.advaithbot.com/from/discordfork",
+    "lang" : "en",
+    "support" : "https://discord.gg/WxPH3Fc",
+    "github" : { 
+        "owner" : "AdvaithBot",
+        "repo" : "advaithbot"
+    },
+    "verified" : false,
+    "nsfw" : false
+      });
+    </script>
+    <div class="box-container primary-flat no-border-radius no-margin">
+  <div class="center">
+    <a class="btn white" href="https://github.com/Terminal/Discord_Fork/blob/master/_bots/398690824721924107.md">
+      <img class="github-logo" src="/assets/images/GitHub-Mark-32px.png">
+      <span class="black-text bold">Voir cette page sur GitHub</span>
+    </a>
+    
+      
+        <a class="btn white" href="/fr/">
+          <span class="black-text bold">Bots</span>
+        </a>
+      
+    
+      
+        <a class="btn white" href="/fr/servers">
+          <span class="black-text bold">Serveurs</span>
+        </a>
+      
+    
+      
+        <a class="btn white" href="/fr/docs">
+          <span class="black-text bold">Développement</span>
+        </a>
+      
+    
+    <hr>
+    <p>Copyright 2017 - 2018, Terminal.ink<br> Concept original par AlexFlipnote<br> GitHub® est une marque de GitHub, Inc.<br> Discord est une marque de Discord Inc.<br> Traduction par Bowser65
+</p>
+    <p><i id="randomMessages">Turn an adblocker on, clone this website, and sail the seven seas.</i></p>
+    <p>
+      <a href="https://github.com/Terminal/Discord_Fork/blob/master/LICENCE">Licence</a> |
+      <a href="/fr/docs/attribution">Attribution</a> |
+      <a href="https://github.com/Terminal/Discord_Fork">Code Source</a>
+    </p>
+  </div>
+</div>
+<div id="login-modal" class="modal modal--close">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1>Login to GitHub</h1>
+    <p>You need to Login to GitHub to continue</p>
+    <a class="btn wisteria white-text" href="https://github.com/login/oauth/authorize?client_id=6fff2201b71ad2d63131&scope=public_repo">Login via GitHub</a>
+  </div>
+</div>
+<script src="https://discordbots.co.uk/assets/js/smoothscroll.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://discordbots.co.uk/assets/js/jarallax.min.js" type="text/javascript" charset="utf-8"></script>
+
+  </body>
+</html>

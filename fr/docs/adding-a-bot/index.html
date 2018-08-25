@@ -1,0 +1,194 @@
+<html lang="fr">
+  <head>
+    <!-- Main content to SEO -->
+
+  <title>Adding your bot to Discord Fork via GitHub - Documentation de développement</title>
+
+
+<meta property="og:title" content="Adding your bot to Discord Fork via GitHub" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+
+<meta property="og:description" content="Instructions on how to add your own bot to the Discord Fork botlist via manually forking and creating a pull request via GitHub. - discordbots.co.uk" />
+<meta name="description" content="Instructions on how to add your own bot to the Discord Fork botlist via manually forking and creating a pull request via GitHub. - discordbots.co.uk" />
+
+
+<meta http-equiv="Content-Language" content="fr">
+<link rel="alternate" hreflang="en" href=" https://discordbots.co.uk/docs/adding-a-bot/"/>
+<link rel="alternate" hreflang="fr" href="https://discordbots.co.uk/fr/docs/adding-a-bot/"/>
+
+
+
+<meta property="og:image" content="https://discordbots.co.uk/assets/images/logo.png" />
+<link rel="icon" type="image/x-icon" href="https://discordbots.co.uk/assets/images/logo.png">
+
+
+<meta name="revisit-after" content="2 days">
+<meta name="keywords" content="discord, bots, botlist">
+<meta name="theme-color" content="#3498db">
+
+<!-- Style and JS stuff -->
+<link rel="stylesheet" href="https://discordbots.co.uk/assets/css/custom.css">
+
+<script src="/fr/api/languages.js"></script>
+
+
+<script src="https://discordbots.co.uk/assets/bundler/bundle.js" type="text/javascript" charset="utf-8"></script>
+<script>
+  delete localStorage;
+</script>
+
+  </head>
+  <body data-ls-type="docs">
+    <div class="nav-container">
+      <span id="menu-icon"></span>
+    
+      <div class="nav-content">
+        <h4 class="center">
+          <a href="/fr/docs">
+            Documentation de développement
+          </a>
+        </h4>
+      </div>
+    
+      <div id="navside" class="sidenav" style="transform: translateX(-250px);">
+        <a href="/fr/">Back to Forklist</a>
+        <a href="/fr/docs/">Docs Homepage</a>
+      </div>
+    </div>
+    <section class="container">
+      <h1 id="adding-your-bot-to-the-website-via-github">Adding your bot to the website via GitHub</h1>
+<p>Thanks for choosing Discord_Fork for your preffered Discord Bots Service Provider (DBSP)</p>
+
+<h2 id="1-fork-the-project">1. Fork the project</h2>
+
+<p><img src="/assets/images/adding-a-bot/1531011733.77.png" alt="How to fork" /></p>
+
+<h2 id="2-create-a-file">2. Create a file</h2>
+<ul>
+  <li>Inside the <code class="highlighter-rouge">_bots</code> folder, create a file called <code class="highlighter-rouge">[CLIENT_ID].md</code>, where <code class="highlighter-rouge">[CLIENT_ID]</code> is the ID of your bot.</li>
+  <li>Copy the code below, and replace with your own details</li>
+  <li>If you do not have a GitHub repository, <strong>DO NOT</strong> insert the following
+    <ul>
+      <li>
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>github:
+  owner: N/A
+  repo: N/A
+</code></pre></div>        </div>
+      </li>
+      <li>This is not allowed, and is grounds for deletion</li>
+      <li>Creating a GitHub repository is recommended, as it increases your ranking on the homepage.
+        <ul>
+          <li>Read more about rankings <a href="/fr/docs/ranking">here</a>;</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Optional fields are OPTIONAL. <strong>DO NOT</strong> insert <code class="highlighter-rouge">N/A</code> when you have nothing to insert.
+    <ul>
+      <li>This is also not allowed, and is grounds for deletion.</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+client_id: [The client ID of your bot]
+application_id: [OPTIONAL / The application ID of your bot. Delete this line, unless you have a pre-2016 bot]
+pagename: [The name of your bot]
+prefix: [The prefix of your bot]
+description: [The description of your bot, limited to 60 characters]
+avatar: [An avatar URL to a Discord website]
+link: [A link to invite your bot - HTTPS only]
+support: [OPTIONAL / A link to the Discord server for the bot]
+github: [OPTIONAL / The location of the source for this bot]
+  owner: username
+  repo: projectName
+nsfw: true | false [If your bot is "Not Safe For Work"]
+---
+
+# My Bot
+You can place MARKDOWN inside this box.
+[Here is a tutorial](https://guides.github.com/features/mastering-markdown/)
+
+## Secondary Heading
+Place information about your bot below the three dashes above (---).
+It can be HTML, or Kramdown compatible Markdown.
+
+_thanks_ **alex**
+</code></pre></div></div>
+
+<ul>
+  <li>Create a commit
+    <ul>
+      <li><img src="/assets/images/adding-a-bot/1531012665.07.png" alt="Creating and editing a file" /></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="3-create-a-pull-request">3. Create a pull request</h2>
+<ul>
+  <li>Go the pull requests page
+    <ul>
+      <li><img src="/assets/images/adding-a-bot/1531012768.53.png" alt="Going to the correct PR place" /></li>
+    </ul>
+  </li>
+  <li>Create a pull request
+    <ul>
+      <li><img src="/assets/images/adding-a-bot/1531012827.26.png" alt="Creating a PR" /></li>
+      <li><img src="/assets/images/adding-a-bot/1531012912.81.png" alt="Pressing the button to create a PR" /></li>
+    </ul>
+  </li>
+  <li>Now wait from 3 to 10 business days.</li>
+</ul>
+
+    </section>
+    <div class="box-container primary-flat no-border-radius no-margin">
+  <div class="center">
+    <a class="btn white" href="https://github.com/Terminal/Discord_Fork/blob/master/_docs/adding-a-bot.md">
+      <img class="github-logo" src="/assets/images/GitHub-Mark-32px.png">
+      <span class="black-text bold">Voir cette page sur GitHub</span>
+    </a>
+    
+      
+        <a class="btn white" href="/fr/">
+          <span class="black-text bold">Bots</span>
+        </a>
+      
+    
+      
+        <a class="btn white" href="/fr/servers">
+          <span class="black-text bold">Serveurs</span>
+        </a>
+      
+    
+      
+        <a class="btn white" href="/fr/docs">
+          <span class="black-text bold">Développement</span>
+        </a>
+      
+    
+    <hr>
+    <p>Copyright 2017 - 2018, Terminal.ink<br> Concept original par AlexFlipnote<br> GitHub® est une marque de GitHub, Inc.<br> Discord est une marque de Discord Inc.<br> Traduction par Bowser65
+</p>
+    <p><i id="randomMessages">Turn an adblocker on, clone this website, and sail the seven seas.</i></p>
+    <p>
+      <a href="https://github.com/Terminal/Discord_Fork/blob/master/LICENCE">Licence</a> |
+      <a href="/fr/docs/attribution">Attribution</a> |
+      <a href="https://github.com/Terminal/Discord_Fork">Code Source</a>
+    </p>
+  </div>
+</div>
+<div id="login-modal" class="modal modal--close">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1>Login to GitHub</h1>
+    <p>You need to Login to GitHub to continue</p>
+    <a class="btn wisteria white-text" href="https://github.com/login/oauth/authorize?client_id=6fff2201b71ad2d63131&scope=public_repo">Login via GitHub</a>
+  </div>
+</div>
+<script src="https://discordbots.co.uk/assets/js/smoothscroll.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://discordbots.co.uk/assets/js/jarallax.min.js" type="text/javascript" charset="utf-8"></script>
+
+  </body>
+</html>

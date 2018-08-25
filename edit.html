@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
   <head>
     <!-- Main content to SEO -->
 
@@ -8,8 +8,16 @@
 <meta property="og:title" content="Add a bot" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+
 <meta property="og:description" content="Generate Markdown and Jekyll frontmatter for the Discord_Fork website. - discordbots.co.uk" />
 <meta name="description" content="Generate Markdown and Jekyll frontmatter for the Discord_Fork website. - discordbots.co.uk" />
+
+
+<meta http-equiv="Content-Language" content="en">
+<link rel="alternate" hreflang="en" href=" https://discordbots.co.uk/edit"/>
+<link rel="alternate" hreflang="fr" href="https://discordbots.co.uk/fr/edit"/>
+
 
 
 <meta property="og:image" content="https://discordbots.co.uk/assets/images/logo.png" />
@@ -22,6 +30,10 @@
 
 <!-- Style and JS stuff -->
 <link rel="stylesheet" href="https://discordbots.co.uk/assets/css/custom.css">
+
+<script src="/api/languages.js"></script>
+
+
 <script src="https://discordbots.co.uk/assets/bundler/bundle.js" type="text/javascript" charset="utf-8"></script>
 <script>
   delete localStorage;
@@ -47,11 +59,7 @@
     </div>
     <section class="container">
       <h1>Add a bot</h1>
-<p>
-  This editor is in beta.
-  Although the greatest care has been taken to prevent invalid Jekyll front matter from being escaped, it is not foolproof.
-  Please self-validate the output to prevent delays in verification.
-</p>
+<p>This editor is in beta.</p>
 <div class="form-container">
   <div class="row">
     <div class="one-half column">
@@ -83,18 +91,18 @@
   <div class="row">
     <div class="one-half column">
       <label for="invite">Invite URL</label>
-      <input class="full-width" placeholder="https://discordapp.com/oauth/" id="invite">
+      <input class="full-width" placeholder="https://discordapp.com/oauth/ or other suitable link" id="invite">
     </div>
     <div class="one-half column">
       <label for="avatar">Avatar URL</label>
-      <input class="full-width" placeholder="https://assets.discordapp.com/" id="avatar">
+      <input class="full-width" placeholder="https://assets.discordapp.com/ or other suitable link" id="avatar">
     </div>
   </div>
   <div class="row">
     <div class="one-half column">
       <label for="support">Support URL</label>
       <input class="full-width" placeholder="https://discord.gg/8uC6aKZ" id="support">
-      <p><small>Leave empty if you want your users to not get help from you &gt;:|</small></p>
+      <p><small>Leave this field empty if you don't like helping people</small></p>
     </div>
     <div class="one-half column">
       <label for="nsfw">NSFW</label>
@@ -106,9 +114,9 @@
   </div>
   <div class="row">
     <div class="none column">
-      <label for="short-description">Short Description</label>
-      <input class="full-width" placeholder="The bot that allows you to xyz" id="short-description">
-      <p><small>Limited to 60 characters, will be trucated</small></p>
+      <label for="short-description">Description</label>
+      <input class="full-width" placeholder="This bot allows you to do magic." id="short-description">
+      <p><small>The front page only allows 60 characters to be displayed.</small></p>
     </div>
   </div>
   <div class="row">
@@ -116,7 +124,7 @@
       <label>GitHub Repository</label>
       <a class="btn emerald" style="margin: 0 5px 1.5rem 0" id="github-display">I have a GitHub repository</a>
       <a class="btn snapchat black-text" style="margin: 0" id="github-info">?</a>
-      <p><small>Leave empty if you do have a GitHub repository for your bot</small></p>
+      <p><small>Leave empty if you do not have a GitHub repository for your bot</small></p>
     </div>
     <div class="one-half column hidden" id="github-owner-box">
       <label for="github-owner">GitHub User / Organisation</label>
@@ -131,15 +139,14 @@
   <label for="contents">Bot Page</label>
   <div id="contents" class="monaco-editor"></div>
   <br>
-  <p>
-    When you are finished, click "Create a pull request" to publish to GitHub,
-    or click Export to see the file you are about to create.
-  </p>
+  <p>When you are finished, click the "Create a pull request" button to publish to GitHub, or click "Export" to see the file you are about to create.</p>
   <a class="btn white black-text" id="merge-button">
     <img class="github-logo" src="/assets/images/GitHub-Mark-32px.png">
     Create a pull request
   </a>
-  <a class="btn emerald" id="export-button">Export</a>
+  <a class="btn emerald" id="export-button">
+    Export
+  </a>
 </div>
 <div id="whatis-application-id" class="modal modal--close">
   <div class="modal-content">
@@ -180,7 +187,7 @@
   <div class="modal-content">
     <span class="close">&times;</span>
     <h1>Export</h1>
-    <p>Copy the contents into GitHub to continue</p>
+    <p>Enter the contents into GitHub manually to continue</p>
     <div id="export-editor" class="monaco-editor"></div>
   </div>
 </div>
@@ -193,7 +200,7 @@
     <a class="btn white black-text" id="merge-modal-submit-button">Submit</a>
   </div>
   <div class="modal-content center hidden" id="merge-modal-loading-content">
-    <h1>Please wait</h1>
+    <h1>Please wait...</h1>
     <div class="loader">Loading...</div>
 
     <pre id="merge-modal-logs"></pre>
@@ -205,7 +212,7 @@
   <div class="center">
     <a class="btn white" href="https://github.com/Terminal/Discord_Fork/blob/master/_pages/edit.html">
       <img class="github-logo" src="/assets/images/GitHub-Mark-32px.png">
-      <span class="black-text bold">View this page on GitHub</span>
+      <span class="black-text bold">View this page in GitHub</span>
     </a>
     
       
@@ -221,8 +228,6 @@
       
     
       
-    
-      
         <a class="btn white" href="/docs">
           <span class="black-text bold">Documentation</span>
         </a>
@@ -235,7 +240,7 @@
     <p>
       <a href="https://github.com/Terminal/Discord_Fork/blob/master/LICENCE">Licence</a> |
       <a href="/docs/attribution">Attribution</a> |
-      <a href="https://github.com/Terminal/Discord_Fork">Source</a>
+      <a href="https://github.com/Terminal/Discord_Fork">Source Code</a>
     </p>
   </div>
 </div>

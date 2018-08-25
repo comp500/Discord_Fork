@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
   <head>
     <!-- Main content to SEO -->
 
@@ -8,8 +8,16 @@
 <meta property="og:title" content="Discord_Fork README.md file" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+
 <meta property="og:description" content="Information about the Discord_Fork application and software - discordbots.co.uk" />
 <meta name="description" content="Information about the Discord_Fork application and software - discordbots.co.uk" />
+
+
+<meta http-equiv="Content-Language" content="en">
+<link rel="alternate" hreflang="en" href=" https://discordbots.co.uk/docs/readme/"/>
+<link rel="alternate" hreflang="fr" href="https://discordbots.co.uk/fr/docs/readme/"/>
+
 
 
 <meta property="og:image" content="https://discordbots.co.uk/assets/images/logo.png" />
@@ -22,6 +30,10 @@
 
 <!-- Style and JS stuff -->
 <link rel="stylesheet" href="https://discordbots.co.uk/assets/css/custom.css">
+
+<script src="/api/languages.js"></script>
+
+
 <script src="https://discordbots.co.uk/assets/bundler/bundle.js" type="text/javascript" charset="utf-8"></script>
 <script>
   delete localStorage;
@@ -117,12 +129,36 @@ Edit <code class="highlighter-rouge">_data/links.yml</code> to point to the auth
   </tbody>
 </table>
 
+<h1 id="developer-notes">Developer Notes</h1>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Pages within the _pages folder should not have a "French" copy.
+  These need to use the `desc_code` front matter to use a new description within the `_data/:lang/descriptions.yml` file
+Pages within the _bots, _docs and _servers folder can have a subfolder with the language
+  The language of the page needs to be placed in the front matter, like
+
+  ---
+  pagename: wow
+  github:
+    owner: Terminal
+    repo: Discord_Fork
+  lang: fr
+  ---
+
+  Copies of the same language do not pass information between each other.
+  For example, if you have an English file, the front matter needs to be copied into the French file, with changes to the description and page name for language differences
+
+All translations for the website itself, and not user generated content (and documentation) should be in the _data/:lang folder.
+  Translators need to go through all .yml files.
+
+Am I a terrible person?
+  Yes
+</code></pre></div></div>
+
     </section>
     <div class="box-container primary-flat no-border-radius no-margin">
   <div class="center">
     <a class="btn white" href="https://github.com/Terminal/Discord_Fork/blob/master/README.md">
       <img class="github-logo" src="/assets/images/GitHub-Mark-32px.png">
-      <span class="black-text bold">View this page on GitHub</span>
+      <span class="black-text bold">View this page in GitHub</span>
     </a>
     
       
@@ -138,8 +174,6 @@ Edit <code class="highlighter-rouge">_data/links.yml</code> to point to the auth
       
     
       
-    
-      
         <a class="btn white" href="/docs">
           <span class="black-text bold">Documentation</span>
         </a>
@@ -152,7 +186,7 @@ Edit <code class="highlighter-rouge">_data/links.yml</code> to point to the auth
     <p>
       <a href="https://github.com/Terminal/Discord_Fork/blob/master/LICENCE">Licence</a> |
       <a href="/docs/attribution">Attribution</a> |
-      <a href="https://github.com/Terminal/Discord_Fork">Source</a>
+      <a href="https://github.com/Terminal/Discord_Fork">Source Code</a>
     </p>
   </div>
 </div>

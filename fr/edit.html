@@ -1,0 +1,259 @@
+<html lang="fr">
+  <head>
+    <!-- Main content to SEO -->
+
+  <title>Add a bot - Documentation de développement</title>
+
+
+<meta property="og:title" content="Add a bot" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+
+<meta property="og:description" content="Generate Markdown and Jekyll frontmatter for the Discord_Fork website. - discordbots.co.uk" />
+<meta name="description" content="Generate Markdown and Jekyll frontmatter for the Discord_Fork website. - discordbots.co.uk" />
+
+
+<meta http-equiv="Content-Language" content="fr">
+<link rel="alternate" hreflang="en" href=" https://discordbots.co.uk/edit"/>
+<link rel="alternate" hreflang="fr" href="https://discordbots.co.uk/fr/edit"/>
+
+
+
+<meta property="og:image" content="https://discordbots.co.uk/assets/images/logo.png" />
+<link rel="icon" type="image/x-icon" href="https://discordbots.co.uk/assets/images/logo.png">
+
+
+<meta name="revisit-after" content="2 days">
+<meta name="keywords" content="discord, bots, botlist">
+<meta name="theme-color" content="#3498db">
+
+<!-- Style and JS stuff -->
+<link rel="stylesheet" href="https://discordbots.co.uk/assets/css/custom.css">
+
+<script src="/fr/api/languages.js"></script>
+
+
+<script src="https://discordbots.co.uk/assets/bundler/bundle.js" type="text/javascript" charset="utf-8"></script>
+<script>
+  delete localStorage;
+</script>
+
+  </head>
+  <body data-ls-type="docs">
+    <div class="nav-container">
+      <span id="menu-icon"></span>
+    
+      <div class="nav-content">
+        <h4 class="center">
+          <a href="/fr/docs">
+            Documentation de développement
+          </a>
+        </h4>
+      </div>
+    
+      <div id="navside" class="sidenav" style="transform: translateX(-250px);">
+        <a href="/fr/">Back to Forklist</a>
+        <a href="/fr/docs/">Docs Homepage</a>
+      </div>
+    </div>
+    <section class="container">
+      <h1>Ajouter un bot</h1>
+<p>Cet éditeur est en bêta.</p>
+<div class="form-container">
+  <div class="row">
+    <div class="one-half column">
+      <label for="client-id">Votre ID Client</label>
+      <input class="full-width" placeholder="Quelque chose comme: 255114091360681986" id="client-id">
+    </div>
+    <div class="one-half column" id="application-id-before">
+      <label>Votre ID d'Application</label>
+      <a class="btn emerald" style="margin: 0 5px 5px 0" id="application-id-display">Insérer un ID</a>
+      <a class="btn snapchat black-text" style="margin: 0" id="application-id-info">?</a>
+      <p><small>Laissez vide si vous n'en avez pas besoin</small></p>
+    </div>
+    <div class="one-half column hidden" id="application-id-box">
+      <label for="application-id">Votre ID d'Application</label>
+      <input class="full-width" placeholder="Quelque chose comme: 255114091360681986" id="application-id">
+      <p><small>Laissez vide si vous n'en avez pas besoin</small></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="one-half column">
+      <label for="name">Nom du bot</label>
+      <input class="full-width" placeholder="Nom du bot Discord" id="name">
+    </div>
+    <div class="one-half column">
+      <label for="prefix">Préfixe</label>
+      <input class="full-width" placeholder="Préfixe" id="prefix">
+    </div>
+  </div>
+  <div class="row">
+    <div class="one-half column">
+      <label for="invite">URL d'invitation</label>
+      <input class="full-width" placeholder="https://discordapp.com/oauth/ ou autre lien adapté" id="invite">
+    </div>
+    <div class="one-half column">
+      <label for="avatar">URL de l'avatar</label>
+      <input class="full-width" placeholder="https://assets.discordapp.com/ ou autre lien adapté" id="avatar">
+    </div>
+  </div>
+  <div class="row">
+    <div class="one-half column">
+      <label for="support">URL du support</label>
+      <input class="full-width" placeholder="https://discord.gg/8uC6aKZ" id="support">
+      <p><small>Laissez ce champ vide si vous n'aimez pas aider les gens</small></p>
+    </div>
+    <div class="one-half column">
+      <label for="nsfw">NSFW</label>
+      <select class="full-width" id="nsfw">
+        <option value="false">Les commandes NSFW ne sont pas une partie majeure du bot</option>
+        <option value="true">L'avatar du bot est NSFW, et/ou le bot est orienté NSFW</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="none column">
+      <label for="short-description">Description</label>
+      <input class="full-width" placeholder="Ce bot vous permet de faire de la magie." id="short-description">
+      <p><small>La page d'accueil n'autorise que 60 caractères à être affichés.</small></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="none column" id="github-before">
+      <label>Dépôt GitHub</label>
+      <a class="btn emerald" style="margin: 0 5px 1.5rem 0" id="github-display">J'ai un dépôt GitHub</a>
+      <a class="btn snapchat black-text" style="margin: 0" id="github-info">?</a>
+      <p><small>Laissez vide si vous n'avez pas de dépôt GitHub pour votre bot</small></p>
+    </div>
+    <div class="one-half column hidden" id="github-owner-box">
+      <label for="github-owner">Utilisateur / Organisation GitHub</label>
+      <input class="full-width" placeholder="ry00001" id="github-owner">
+    </div>
+    <div class="one-half column hidden" id="github-repo-box">
+      <label for="github-repo">Dépôt GitHub</label>
+      <input class="full-width" placeholder="Tuxedo" id="github-repo">
+    </div>
+  </div>
+  
+  <label for="contents">Page du Bot</label>
+  <div id="contents" class="monaco-editor"></div>
+  <br>
+  <p>Lorsque vous avez fini, cliquez sur le bouton "Créer une pull request" pour publier sur GitHub, ou cliquez sur "Exporter" pour voir le fichier que vous êtes sur le point de créer.</p>
+  <a class="btn white black-text" id="merge-button">
+    <img class="github-logo" src="/assets/images/GitHub-Mark-32px.png">
+    Créer une pull request
+  </a>
+  <a class="btn emerald" id="export-button">
+    Exporter
+  </a>
+</div>
+<div id="whatis-application-id" class="modal modal--close">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1>Application ID</h1>
+    <h2>What is it?</h2>
+    <p>
+      The application ID of a bot is the ID which is used to invite the bot, and is found on the Discord OAuth invite link button.
+      You most likely do not require to insert one, as it is usually the same as the Client ID, except for bots made before 2016.
+    </p>
+    <p>
+      Leave this empty if you are unsure
+    </p>
+    <img src="/assets/images/edit/application_id.png">
+    <p><small>An example of a bot which does have an application_id</small></p>
+  </div>
+</div>
+<div id="whatis-github" class="modal modal--close">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1>GitHub</h1>
+    <h2>What is it?</h2>
+    <a href="https://github.com/" target="_blank">Visit GitHub</a>
+    <p>
+      GitHub is a website where you can collaborate and share programming code with people all over the world, using the Git versioning software.
+      In order to be ranked higher in the Discord_Fork website, you should put your code into the GitHub repository, and add a relevant open source licence.
+    </p>
+    <a class="btn white black-text" href="https://github.com/new" target="_blank">
+      <img class="github-logo" src="/assets/images/GitHub-Mark-32px.png">
+      Create a GitHub repository
+    </a>
+    <p>
+      Leave this empty if you do not have one.
+    </p>
+  </div>
+</div>
+<div id="export-modal" class="modal modal--close">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1>Exporter</h1>
+    <p>Entrez le contenu manuellement sur GitHub afin de continuer</p>
+    <div id="export-editor" class="monaco-editor"></div>
+  </div>
+</div>
+<div id="merge-modal" class="modal modal--close" data-owner="Terminal" data-repo="Discord_Fork">
+  <div class="modal-content" id="merge-modal-content">
+    <span class="close">&times;</span>
+    <h1>Créer une pull request</h1>
+    <p>Veuillez entrer tout commentaire que vous souhaitez mettre</p>
+    <div id="merge-editor" class="monaco-editor"></div>
+    <a class="btn white black-text" id="merge-modal-submit-button">Envoyer</a>
+  </div>
+  <div class="modal-content center hidden" id="merge-modal-loading-content">
+    <h1>Veuillez patienter...</h1>
+    <div class="loader">Loading...</div>
+
+    <pre id="merge-modal-logs"></pre>
+  </div>
+</div>
+
+    </section>
+    <div class="box-container primary-flat no-border-radius no-margin">
+  <div class="center">
+    <a class="btn white" href="https://github.com/Terminal/Discord_Fork/blob/master/_pages/edit.html">
+      <img class="github-logo" src="/assets/images/GitHub-Mark-32px.png">
+      <span class="black-text bold">Voir cette page sur GitHub</span>
+    </a>
+    
+      
+        <a class="btn white" href="/fr/">
+          <span class="black-text bold">Bots</span>
+        </a>
+      
+    
+      
+        <a class="btn white" href="/fr/servers">
+          <span class="black-text bold">Serveurs</span>
+        </a>
+      
+    
+      
+        <a class="btn white" href="/fr/docs">
+          <span class="black-text bold">Développement</span>
+        </a>
+      
+    
+    <hr>
+    <p>Copyright 2017 - 2018, Terminal.ink<br> Concept original par AlexFlipnote<br> GitHub® est une marque de GitHub, Inc.<br> Discord est une marque de Discord Inc.<br> Traduction par Bowser65
+</p>
+    <p><i id="randomMessages">Turn an adblocker on, clone this website, and sail the seven seas.</i></p>
+    <p>
+      <a href="https://github.com/Terminal/Discord_Fork/blob/master/LICENCE">Licence</a> |
+      <a href="/fr/docs/attribution">Attribution</a> |
+      <a href="https://github.com/Terminal/Discord_Fork">Code Source</a>
+    </p>
+  </div>
+</div>
+<div id="login-modal" class="modal modal--close">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1>Login to GitHub</h1>
+    <p>You need to Login to GitHub to continue</p>
+    <a class="btn wisteria white-text" href="https://github.com/login/oauth/authorize?client_id=6fff2201b71ad2d63131&scope=public_repo">Login via GitHub</a>
+  </div>
+</div>
+<script src="https://discordbots.co.uk/assets/js/smoothscroll.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://discordbots.co.uk/assets/js/jarallax.min.js" type="text/javascript" charset="utf-8"></script>
+
+  </body>
+</html>

@@ -1,0 +1,61 @@
+[
+  {
+    "id" : "330777295952543744",
+    "server_id" : "330777295952543744",
+    "name" : "Terminal",
+    "description" : "The server of Terminal.ink",
+    "long_description" : "The server of Terminal.ink",
+    "url_safe": "terminal",
+    "avatar" : "https://terminal.ink/assets/images/avatar.png",
+    "link" : "https://discord.gg/8uC6aKZ",
+    "github" : { 
+        "owner" : "terminal"
+    },
+    "verified" : true,
+    "nsfw" : false
+  },{
+    "id" : "348267161967394826",
+    "server_id" : "348267161967394826",
+    "name" : "KawaiiBot",
+    "description" : "The official KawaiiBot hangout server",
+    "long_description" : "The official KawaiiBot hangout server where you can talk with other people can have some fun around.",
+    "url_safe": "kawaiibot",
+    "avatar" : "https://cdn.discordapp.com/icons/348267161967394826/324d1edde4ea045854834a0209d03b4c.png",
+    "link" : "https://discord.gg/wGwgWJW",
+    "verified" : false,
+    "nsfw" : false
+  },{
+    "id" : "375752406727786498",
+    "server_id" : "375752406727786498",
+    "name" : "Kyoko Discord Bot Support",
+    "description" : "Official Kyoko support server, with nice community.",
+    "long_description" : "This discord server is mainly for Kyoko support, but we also talk about other things.",
+    "url_safe": "kyokodiscordbotsupport",
+    "avatar" : "https://cdn.discordapp.com/icons/375752406727786498/3d5cfaef3c1ac33cb67b1e5f06288dd8.png",
+    "link" : "https://discord.gg/ZvDRQf7",
+    "verified" : false,
+    "nsfw" : false
+  },{
+    "id" : "461282328468258834",
+    "server_id" : "461282328468258834",
+    "name" : "Strawberry Fields",
+    "description" : "Totally not farming money",
+    "long_description" : "Totally not farming money",
+    "url_safe": "strawberryfields",
+    "avatar" : "https://cdn.discordapp.com/icons/461282328468258834/c532a12417f5fc336e72144b6af95637.png",
+    "link" : "https://discord.gg/hCYrRgn",
+    "verified" : false,
+    "nsfw" : false
+  },{
+    "id" : "86484642730885120",
+    "server_id" : "86484642730885120",
+    "name" : "AlexFlipnote",
+    "description" : "The personal server to AlexFlipnote",
+    "long_description" : "The personal server to AlexFlipnote, packed with memes as you join in",
+    "url_safe": "alexflipnote",
+    "avatar" : "https://alexflipnote.xyz/assets/images/profile.png",
+    "link" : "https://discord.gg/DpxkY3x",
+    "verified" : true,
+    "nsfw" : false
+  }
+]
