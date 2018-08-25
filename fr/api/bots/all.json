@@ -585,6 +585,25 @@
     "verified" : false,
     "nsfw" : false
   },{
+    "id" : "377609965554237453",
+    "client_id" : "377609965554237453",
+    "application_id" : "377609965554237453",
+    "name" : "DiscordTel",
+    "prefix": ">",
+    "description" : "DiscordTel is a realistic telephone bot that lets you cal...",
+    "long_description" : "DiscordTel is a realistic telephone bot that lets you call other servers!",
+    "url_safe": "/bots/377609965554237453/",
+    "avatar" : "https://raw.githubusercontent.com/austinhuang0131/discordtel/master/discordtel.png",
+    "link" : "https://discordapp.com/oauth2/authorize?client_id=377609965554237453&scope=bot",
+    "lang" : "en",
+    "support" : "",
+    "github" : { 
+        "owner" : "austinhuang0131",
+        "repo" : "discordtel"
+    },
+    "verified" : false,
+    "nsfw" : false
+  },{
     "id" : "388633353743630336",
     "client_id" : "388633353743630336",
     "application_id" : "388633353743630336",
