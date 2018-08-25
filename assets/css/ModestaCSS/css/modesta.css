@@ -2821,11 +2821,6 @@ button {
     .nav-container .nav-content * {
       margin: 0; }
   .nav-container .sidenav {
-    transform: translateX(-250px);
-    -webkit-transform: translateX(-250px);
-    -ms-transform: translateX(-250px);
-    -moz-transform: translateX(-250px);
-    -o-transform: translateX(-250px);
     background-color: #181818;
     height: 100%;
     left: 0;
@@ -2833,7 +2828,7 @@ button {
     position: fixed;
     top: 0;
     transition: .5s;
-    width: 250px;
+    width: 0;
     z-index: 1; }
     .nav-container .sidenav .current {
       color: #2ecc71; }
@@ -3117,7 +3112,7 @@ button {
     margin-top: 2em;
     padding-bottom: .75em;
     text-align: center;
-    width: 320px; }
+    width: 350px; }
     .card-container .card .avatar {
       background-color: #282828;
       border-radius: 6px 6px 0 0;
