@@ -1,5 +1,19 @@
 [
   {
+    "id" : "188752295108935680",
+    "server_id" : "188752295108935680",
+    "name" : "Café 0131+",
+    "description" : "Engaging politics/current events/daily life discussions w...",
+    "long_description" : "Welcome to Café 0131+! Here, peeps all around Discord gather for debates on topics such as politics, modern day crises, and current events, as well as some light-weight discussions on lives and such. We also have artworks and memes for you to enjoy! Join today for engaging discussions and a great family that welcomes everyone!",
+    "url_safe": "café0131+",
+    "avatar" : "https://i.imgur.com/VznMIwV.png",
+    "link" : "https://discord.gg/013MqTM1p1qm52VcZ",
+    "github" : { 
+        "owner" : "austinhuang0131"
+    },
+    "verified" : false,
+    "nsfw" : false
+  },{
     "id" : "330777295952543744",
     "server_id" : "330777295952543744",
     "name" : "Terminal",
