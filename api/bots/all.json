@@ -587,21 +587,6 @@
     "verified" : false,
     "nsfw" : false
   },{
-    "id" : "290947970457796608",
-    "client_id" : "290947970457796608",
-    "application_id" : "290947970457796608",
-    "name" : "RemindMeBot",
-    "prefix": "r> or @RemindMeBot",
-    "description" : "A bot designed for you to elegantly create, edit & be ser...",
-    "long_description" : "A bot designed for you to elegantly create, edit & be served reminders.",
-    "url_safe": "/bots/290947970457796608/",
-    "avatar" : "https://cdn.discordapp.com/avatars/290947970457796608/29dcff32d9686cabfdebbc48dcbb7d2a.png",
-    "link" : "https://discordapp.com/oauth2/authorize?permissions=27648&scope=bot&client_id=290947970457796608",
-    "lang" : "en",
-    "support" : "",
-    "verified" : false,
-    "nsfw" : false
-  },{
     "id" : "292953664492929025",
     "client_id" : "292953664492929025",
     "application_id" : "292953664492929025",
@@ -691,21 +676,6 @@
     "url_safe": "/bots/301504284745531395/",
     "avatar" : "https://cdn.discordapp.com/avatars/301504284745531395/21c0f2173cbe431c4df891dd17111b19.png",
     "link" : "https://atalanta.site/terminal-invite",
-    "lang" : "en",
-    "support" : "",
-    "verified" : false,
-    "nsfw" : false
-  },{
-    "id" : "302864271383986176",
-    "client_id" : "302864271383986176",
-    "application_id" : "302864271383986176",
-    "name" : "Tweetcord",
-    "prefix": "t/",
-    "description" : "A bot that allows you to interact with Twitter",
-    "long_description" : "A bot that allows you to interact with Twitter",
-    "url_safe": "/bots/302864271383986176/",
-    "avatar" : "https://cdn.discordapp.com/avatars/302864271383986176/dcf91fa624871c66ea779210fb6fce2f",
-    "link" : "https://discordapp.com/oauth2/authorize?permissions=27712&scope=bot&client_id=302864271383986176",
     "lang" : "en",
     "support" : "",
     "verified" : false,
