@@ -2,7 +2,7 @@
   {
     "id" : "134133271750639616",
     "client_id" : "134133271750639616",
-    "application_id" : "134133271750639616",
+    "application_id" : "170237838334492682",
     "name" : "blargbot",
     "prefix": "b!",
     "description" : "A multipurpose discord bot - Moderation and Fun!",
@@ -51,7 +51,7 @@
   },{
     "id" : "170915625722576896",
     "client_id" : "170915625722576896",
-    "application_id" : "170915625722576896",
+    "application_id" : "170915256833540097",
     "name" : "DiscordRPG",
     "prefix": "#! or @DiscordRPG",
     "description" : "Fun boiled to the basics!",
@@ -85,7 +85,7 @@
   },{
     "id" : "193403332046487552",
     "client_id" : "193403332046487552",
-    "application_id" : "193403332046487552",
+    "application_id" : "193403294419255297",
     "name" : "HawkBot",
     "prefix": "<",
     "description" : "Primary purpose is to serve as a Jisho, kanji & anime loo...",
@@ -119,7 +119,7 @@
   },{
     "id" : "201503408652419073",
     "client_id" : "201503408652419073",
-    "application_id" : "201503408652419073",
+    "application_id" : "201492375653056512",
     "name" : "Best meme bot",
     "prefix": "_",
     "description" : "The music bot themed for toxic meme lords",
@@ -134,7 +134,7 @@
   },{
     "id" : "202930020396564480",
     "client_id" : "202930020396564480",
-    "application_id" : "202930020396564480",
+    "application_id" : "202929883863580673",
     "name" : "Trello",
     "prefix": "",
     "description" : "Manage Trello Boards right from your Discord!",
@@ -149,7 +149,7 @@
   },{
     "id" : "206955935229280256",
     "client_id" : "206955935229280256",
-    "application_id" : "206955935229280256",
+    "application_id" : "206955239985774593",
     "name" : "Senpai",
     "prefix": "% or @Senpai or Custom",
     "description" : "An anime bot that includes a ton of weeb stuff and multip...",
