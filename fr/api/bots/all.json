@@ -851,6 +851,21 @@
     "verified" : false,
     "nsfw" : false
   },{
+    "id" : "338832551278018581",
+    "client_id" : "338832551278018581",
+    "application_id" : "338832551278018581",
+    "name" : "Reknown",
+    "prefix": "?, Mention, or Customizable",
+    "description" : "A Discord Bot coded in Discord.js with leveling, music, a...",
+    "long_description" : "A Discord Bot coded in Discord.js with leveling, music, and more.",
+    "url_safe": "/bots/338832551278018581/",
+    "avatar" : "https://cdn.discordapp.com/avatars/338832551278018581/622f21dffeb62561e74219aaf0e7e513.png?size=2048",
+    "link" : "https://discordapp.com/oauth2/authorize?client_id=338832551278018581&scope=bot&permissions=2146958591",
+    "lang" : "en",
+    "support" : "https://discord.gg/n45fq9K",
+    "verified" : false,
+    "nsfw" : false
+  },{
     "id" : "341980888239702017",
     "client_id" : "341980888239702017",
     "application_id" : "341980888239702017",
