@@ -1236,6 +1236,21 @@
     "verified" : false,
     "nsfw" : false
   },{
+    "id" : "454713729649475594",
+    "client_id" : "454713729649475594",
+    "application_id" : "454713729649475594",
+    "name" : "LxiBot",
+    "prefix": "l+",
+    "description" : "A lot of commands! The best bot that you ever seen, moder...",
+    "long_description" : "A lot of commands! The best bot that you ever seen, moderation, fun, utility!",
+    "url_safe": "/bots/454713729649475594/",
+    "avatar" : "https://cdn.discordapp.com/attachments/455027925394128916/478692246145990656/v458pre-release.png",
+    "link" : "https://discordapp.com/oauth2/authorize?client_id=454713729649475594&scope=bot&permissions=8",
+    "lang" : "en",
+    "support" : "https://discord.gg/BvAMBVR",
+    "verified" : false,
+    "nsfw" : false
+  },{
     "id" : "463733562601111553",
     "client_id" : "463733562601111553",
     "application_id" : "463733562601111553",
