@@ -1047,6 +1047,21 @@
     "verified" : false,
     "nsfw" : false
   },{
+    "id" : "398251412246495233",
+    "client_id" : "398251412246495233",
+    "application_id" : "398251412246495233",
+    "name" : "Furry Bot",
+    "prefix": "f!",
+    "description" : "A fun multi-purpose bot for (furry) Discord servers!",
+    "long_description" : "A fun multi-purpose bot for (furry) Discord servers!",
+    "url_safe": "/bots/398251412246495233/",
+    "avatar" : "https://i.furrybot.me/furry.png",
+    "link" : "https://discordapp.com/oauth2/authorize?client_id=398251412246495233&scope=bot&permissions=-1",
+    "lang" : "en",
+    "support" : "https://discord.gg/SuccpZw",
+    "verified" : false,
+    "nsfw" : false
+  },{
     "id" : "398690824721924107",
     "client_id" : "398690824721924107",
     "application_id" : "398690824721924107",
